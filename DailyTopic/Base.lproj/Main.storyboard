@@ -550,7 +550,11 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <items>
                                     <navigationItem title="Add Picture" id="QUo-MI-59p">
-                                        <barButtonItem key="leftBarButtonItem" image="createTopic" id="6pQ-ss-AdA"/>
+                                        <barButtonItem key="leftBarButtonItem" image="createTopic" id="6pQ-ss-AdA">
+                                            <connections>
+                                                <action selector="returnCreateTopicButton:" destination="IN3-O7-sUn" id="MJs-s4-Bee"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -592,6 +596,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="imageView" destination="X7L-C7-E50" id="oun-ky-czW"/>
+                        <outlet property="returnCreateTopic" destination="6pQ-ss-AdA" id="Trd-41-u6B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vn4-QE-0nf" userLabel="First Responder" sceneMemberID="firstResponder"/>

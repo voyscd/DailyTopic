@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wsK-G5-LqU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WoU-ma-7Ro">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -418,11 +418,11 @@
                         <viewControllerLayoutGuide type="bottom" id="3K7-5L-272"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bhe-TF-MW5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-JR-hZl">
-                                <rect key="frame" x="11" y="179" width="304" height="96"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-JR-hZl">
+                                <rect key="frame" x="0.0" y="28" width="600" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="181" id="aae-Q0-HQ7"/>
                                     <constraint firstAttribute="height" constant="96" id="cqH-qw-DyV"/>
@@ -438,28 +438,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8Z-IQ-Efv">
-                                <rect key="frame" x="9" y="384" width="286" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="htc-8r-JM8"/>
-                                </constraints>
-                                <state key="normal" title="Add Picture">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="htc-8r-JM8"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="htc-8r-JM8"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="chF-Hc-qpw">
-                                <rect key="frame" x="32" y="28" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="chF-Hc-qpw">
+                                <rect key="frame" x="0.0" y="318" width="600" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="BbY-8n-GJd"/>
@@ -478,41 +458,11 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBT-wc-sne">
-                                <rect key="frame" x="20" y="457" width="262" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="146" id="SET-hW-xFe"/>
-                                </constraints>
-                                <state key="normal" title="Create Topic">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="SET-hW-xFe"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="SET-hW-xFe"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="addNotificationTapped:" destination="WoU-ma-7Ro" eventType="touchUpInside" id="l8f-HU-lZN"/>
-                                    <segue destination="IN3-O7-sUn" kind="presentation" id="8TX-Dk-MUa"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.39629872799999999" green="0.5507409284" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DBT-wc-sne" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leadingMargin" constant="4" id="2P6-ME-KOQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DBT-wc-sne" secondAttribute="trailing" constant="22" id="3mZ-VN-GfK"/>
-                            <constraint firstItem="3K7-5L-272" firstAttribute="top" secondItem="DBT-wc-sne" secondAttribute="bottom" constant="32" id="4n5-f0-iLi"/>
-                            <constraint firstItem="DBT-wc-sne" firstAttribute="top" secondItem="S8Z-IQ-Efv" secondAttribute="bottom" constant="43" id="FwV-4N-DUj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="S8Z-IQ-Efv" secondAttribute="trailing" constant="9" id="Kfi-ir-8J7"/>
                             <constraint firstItem="chF-Hc-qpw" firstAttribute="top" secondItem="QGS-GR-IrK" secondAttribute="bottom" constant="8" symbolic="YES" id="Qoz-vJ-qX5"/>
-                            <constraint firstItem="chF-Hc-qpw" firstAttribute="centerX" secondItem="S8Z-IQ-Efv" secondAttribute="centerX" id="U5M-t1-yh9"/>
-                            <constraint firstItem="S8Z-IQ-Efv" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leadingMargin" constant="-7" id="Yf9-zE-hhT"/>
+                            <constraint firstItem="chF-Hc-qpw" firstAttribute="trailing" secondItem="PWN-JR-hZl" secondAttribute="trailing" id="WFN-cd-HEr"/>
                             <constraint firstItem="PWN-JR-hZl" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leadingMargin" constant="-5" id="bgE-oU-3N6"/>
                             <constraint firstItem="PWN-JR-hZl" firstAttribute="top" secondItem="chF-Hc-qpw" secondAttribute="bottom" constant="23" id="cdc-pf-Tq8"/>
                             <constraint firstItem="chF-Hc-qpw" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leadingMargin" constant="16" id="ibs-nY-FHv"/>

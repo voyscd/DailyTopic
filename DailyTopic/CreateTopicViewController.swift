@@ -9,10 +9,12 @@
 import UIKit
 import LiquidFloatingActionButton
 
+var cells = [LiquidFloatingCell]()  //DataSource
+
 
 class CreateTopicViewController: UIViewController {
 
-    var cells = [LiquidFloatingCell]()  //DataSource
+
     var floatingActionButton: LiquidFloatingActionButton!
     
     
@@ -28,12 +30,15 @@ class CreateTopicViewController: UIViewController {
     
     private func createFloatingButtons()
     {
-        cells.append(createButtonCell("add"))
-        cells.append(createButtonCell("camera"))
+        cells.append(createButtonCell("Add"))
+        cells.append(createButtonCell("Camera"))
         cells.append(createButtonCell("library"))
         
-        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16,y: self.view.frame.height - 56 - 10, width: 56 , height: 56)
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 300,y: self.view.frame.height - 56 - 80, width: 56 , height: 56)
         let floatingButton = createButton(floatingFrame,style: .Up)
+        
+        self.view.addSubview(floatingButton)
+        self.floatingActionButton = floatingButton
         
     }
     

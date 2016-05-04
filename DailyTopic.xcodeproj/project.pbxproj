@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		653CDF7464F12533073802CA /* Pods_DailyTopicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3B8EE558214B1033A1D0CF /* Pods_DailyTopicTests.framework */; };
+		6555A35D1CDA3C8800E1A3BA /* LiquidFloatingActionButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6555A35C1CDA3C8800E1A3BA /* LiquidFloatingActionButton.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6560D61B1CDA01D20088034C /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560D61A1CDA01D20088034C /* UserProfileViewController.swift */; };
 		6560D61D1CDA01F30088034C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560D61C1CDA01F30088034C /* SearchViewController.swift */; };
 		6560D61F1CDA02240088034C /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560D61E1CDA02240088034C /* FavouriteViewController.swift */; };
@@ -29,7 +30,7 @@
 		65FA5A351CD4BF2900F14F41 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA5A341CD4BF2900F14F41 /* CameraViewController.swift */; };
 		65FACD751CD48756000CAC6E /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FACD741CD48756000CAC6E /* VideoSplashViewController.swift */; };
 		65FACD771CD487A4000CAC6E /* VideoCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FACD761CD487A4000CAC6E /* VideoCutter.swift */; };
-		85651EC101B6895F714A2709 /* Pods_DailyTopic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8964F3E16B27A1A48965683F /* Pods_DailyTopic.framework */; };
+		85651EC101B6895F714A2709 /* Pods_DailyTopic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8964F3E16B27A1A48965683F /* Pods_DailyTopic.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		E9406B5CEB8F54DE2755033E /* Pods_DailyTopicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF6BA5A31BC0529E63800B0 /* Pods_DailyTopicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		11430750F14115300CD77AD3 /* Pods-DailyTopicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyTopicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyTopicTests/Pods-DailyTopicTests.release.xcconfig"; sourceTree = "<group>"; };
 		1C3B8EE558214B1033A1D0CF /* Pods_DailyTopicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24489BB5B6BBE9BCE66DFCED /* Pods-DailyTopic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyTopic.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyTopic/Pods-DailyTopic.release.xcconfig"; sourceTree = "<group>"; };
+		6555A35C1CDA3C8800E1A3BA /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LiquidFloatingActionButton.framework; path = "Pods/../build/Debug-iphoneos/LiquidFloatingActionButton/LiquidFloatingActionButton.framework"; sourceTree = "<group>"; };
 		6560D61A1CDA01D20088034C /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		6560D61C1CDA01F30088034C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6560D61E1CDA02240088034C /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6555A35D1CDA3C8800E1A3BA /* LiquidFloatingActionButton.framework in Frameworks */,
 				85651EC101B6895F714A2709 /* Pods_DailyTopic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +227,7 @@
 		F3B5646533917CDC221B9956 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6555A35C1CDA3C8800E1A3BA /* LiquidFloatingActionButton.framework */,
 				8964F3E16B27A1A48965683F /* Pods_DailyTopic.framework */,
 				1C3B8EE558214B1033A1D0CF /* Pods_DailyTopicTests.framework */,
 				BAF6BA5A31BC0529E63800B0 /* Pods_DailyTopicUITests.framework */,
@@ -654,6 +658,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/LiquidFloatingActionButton",
+				);
 				INFOPLIST_FILE = DailyTopic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -670,6 +678,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/LiquidFloatingActionButton",
+				);
 				INFOPLIST_FILE = DailyTopic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LiquidFloatingActionButton-LiquidFloatingActionButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LiquidFloatingActionButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-DailyTopic.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>39A1A25C42F05A72CA0E1A5DC4810C15</key>
+		<key>2E4A37C88D68A62EA5C1BC7A2A4D19AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3663C777246CD09C0500DF1B7FDCEBBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>B7AC9326D819482593FE118E915409D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECB4143196184B0E0EA02182DB2B9CCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,12 +1,25 @@
 PODS:
   - Firebase (2.5.1)
+  - LiquidFloatingActionButton (0.1.1)
 
 DEPENDENCIES:
   - Firebase (>= 2.5.1)
+  - LiquidFloatingActionButton (from `https://github.com/yoavlt/LiquidFloatingActionButton`, branch `swift-2.0`)
+
+EXTERNAL SOURCES:
+  LiquidFloatingActionButton:
+    :branch: swift-2.0
+    :git: https://github.com/yoavlt/LiquidFloatingActionButton
+
+CHECKOUT OPTIONS:
+  LiquidFloatingActionButton:
+    :commit: 25de77f23df84e0a0981193abecced8afc2ed9c7
+    :git: https://github.com/yoavlt/LiquidFloatingActionButton
 
 SPEC CHECKSUMS:
   Firebase: 3565ea88b830f28f2c77ecc524622bc71a20d085
+  LiquidFloatingActionButton: dcdae1e59eb07eccbf60c027001a4d6731c345c9
 
-PODFILE CHECKSUM: 6aebf1ad03f299eb040916afb59af4c53610ec85
+PODFILE CHECKSUM: e3ad8403381ae934487f081361d49e37c8d95168
 
 COCOAPODS: 1.0.0.beta.6

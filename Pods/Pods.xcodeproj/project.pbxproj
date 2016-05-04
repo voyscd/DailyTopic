@@ -7,37 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = C30DAF734CAAF2F494DE720B2386CFFF /* Empty.m */; };
-		128CB115326BD797A1CA0FB9BF037705 /* Pods-DailyTopic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A72601175310C42DDA9E3B8C1EEB02EA /* Pods-DailyTopic-dummy.m */; };
-		191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A06FFED058218134C702A407304A9F /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 99994D7C8CADD905BE2B9BBD61C5DAD8 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = 891B0E2082543D26FADFA72F524E77AF /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0143DCE5A276FD546BC307BA6384A /* Firebase-dummy.m */; };
-		239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = 817BCDAD66E1493A462C3D125BB8A039 /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAA7C78DB3882A984A96D28F8AA2D41 /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FFA21EFA583E3D564A5B5AB3B53A37 /* Empty.m */; };
+		144405A414830766CD06305169178402 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9C811ACE577397C9055540BA28706 /* CGRectEx.swift */; };
+		191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E97BFA339E7099FD21C8E0F0DAB7BF51 /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = E0331A8DB6AEC0A740C4C06C5D3C2750 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDAB4095303C8B690A4A8E8E9A02084 /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D0B4C197612FEFFC1DED01F34CD241 /* Firebase-dummy.m */; };
+		222B3A0A26BC9529FDECA4F15FBDE173 /* Pods-DailyTopic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A72601175310C42DDA9E3B8C1EEB02EA /* Pods-DailyTopic-dummy.m */; };
+		239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2DE34F62A17A93D23E327E1EE8ECF4 /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D0F9AA3391468E10F136C35339BC85 /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CF2ECB2B9E11A520B73981A8FFB0BFE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2562A3079A7CC4487933C167DCA75FBA /* SystemConfiguration.framework */; };
-		4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E2AC3209047C6550E8D065954966F5 /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4244375967A72339B965317FB0B307AD /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67250628E91E92E19B290C396DD02BC7 /* ArrayEx.swift */; };
+		42B6A6F41C398F815323EB2037E8EBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2708ACCEBA03B6653240D9EEE772B3 /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5531E39ADA47694D3938668B154A3C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */; };
-		60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A35E3E3F0CCA6B0B0A5E20810C135EA2 /* Firebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 55000294CC62B92A597CC865BC53ECFC /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FBBB3A122CEA1951C3104AEA6F5100C /* LiquidFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D113C718BE16B57CB4409D8AADD9B8BA /* LiquidFloatingActionButton-dummy.m */; };
+		60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FF6CC0F1844BB0EF383872D65AA0700 /* Firebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = FC65615E84CF9A6B87EF3EE9B0F793BF /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72042359B6606B6363E495430D780479 /* LiquidFloatingActionButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AA21B1CD3DEA84A9DA44CB4416D2376 /* LiquidFloatingActionButton.bundle */; };
 		85A4F602CA6B100539E601AE38A2D9C0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631C7879B4FF5DAF62305D0247AF58AD /* CFNetwork.framework */; };
-		8E297267353ADB9100483E1C2ECBF218 /* Pods-DailyTopic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1871FB302914616A7BA562730CF3CD05 /* Pods-DailyTopic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99ECF1979B4FE75ACE1E8FD67DFDB2F3 /* Pods-DailyTopicTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FED567E73AE749B23E1D699E27D0E3D2 /* Pods-DailyTopicTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF319F046962502FBCBE36EB3C3E609B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */; };
+		AE59C3FD0BEF00C2CCAB0E64C00EC6F2 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080DB4E43569E4996C6C1B4C922D515C /* LiquidUtil.swift */; };
+		AF71B63F7B7FB9C09F4A1424BAFE1360 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4FF3ADB3E6967B18054AD79C7415C /* LiquidFloatingActionButton.swift */; };
+		BA98EBDB57D30CC7369E42012CB3FB34 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A2E319944048FC7B2669A6BF2CCEF2 /* CGPointEx.swift */; };
+		BCD46D72F2A27D0DF398386FF30B8F26 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A610D8F089B6A1094DE0F58920182F /* LiquittableCircle.swift */; };
 		BD050B295EC63FCBD295EBA18A2F27EB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7D8DF493D53A880E6D325B5C9F793F /* Security.framework */; };
+		C03D9D3F3B3EBA8CCE0EC249D63D5C55 /* Pods-DailyTopic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1871FB302914616A7BA562730CF3CD05 /* Pods-DailyTopic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C202F5F6737D20A1122CBA737C12B2DE /* Pods-DailyTopicTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2060F279F8E041EC68D04B722BA7C5D4 /* Pods-DailyTopicTests-dummy.m */; };
-		C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBB06694A091085C1CDD755EBC4B578 /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E547A224BA2BD4DB4A5DB059D7F5898 /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = B9267A02985620F29BBD7A02B634F666 /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4772D6AE64BC95871FB42138D11943E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */; };
+		CD635561809D218A952928FCA3BC1B78 /* LiquidFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA545E136CBFA5B1333B1BD2E54F15F1 /* LiquidFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = 944181139BA6E0224A6EC98390620567 /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB0D31FDF40C1AE86E988CAB5F7D6578 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D0842DD57FE77DA06FD5BBFBEB9F1 /* SimpleCircleLiquidEngine.swift */; };
 		DFEBECFC61D01720EA26E0FC844DE04D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */; };
 		E1E5B16E1ED075FD67F9CCDEF49763A2 /* Pods-DailyTopicUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAFAD2A51A3E1AEE09E92E7E15FF30B /* Pods-DailyTopicUITests-dummy.m */; };
-		E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9726FDC67EF47C28FEC9A974D42B81B4 /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FE7BFEAA7B743553B973A7168CDD98 /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BC5680AF2FFB0AFD6F8A7A07FAA5DA7B /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2F111170835CF43C2EE3DCA2316446 /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB525B5BB98F748F75844DD206FAB525 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */; };
 		FB5CDE182C4F3B40AC6959B635BCA770 /* Pods-DailyTopicUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E30CF897D0A739778EF618E5E637E864 /* Pods-DailyTopicUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF747B3BDF1D1DDF633B9FEBFA9C15ED /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE222AB680BD30103E518748B263B77 /* UIColorEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DEC59E8977BC3AA904774B7738AD5ED6 /* PBXContainerItemProxy */ = {
+		0AE4C8CA29A3918B1EF2B24B92CE82D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECB4143196184B0E0EA02182DB2B9CCA;
+			remoteInfo = LiquidFloatingActionButton;
+		};
+		241D7E67C3518A9E632A0EDFC7D211A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4A37C88D68A62EA5C1BC7A2A4D19AE;
+			remoteInfo = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+		};
+		8405C938C7C946AD7CAB9EB4A4C7E8AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -47,67 +73,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009F9504BAF6C25F5236C9DAF33AA049 /* Pods_DailyTopic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		03C056D204C50BE209D171178185C8F7 /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		080DB4E43569E4996C6C1B4C922D515C /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
+		0B45F4654EFE00BD1D2212D8366287FB /* Pods_DailyTopicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CADD252711EE63B8FDB9293CA829A23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		104481390B1098325AD2AFB70FC78878 /* Firebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-prefix.pch"; sourceTree = "<group>"; };
+		0E67C7F086C545DD23FD2D2366CB1F3E /* LiquidFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		0F46D335EF2C8F009742229673BD070E /* Pods_DailyTopic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1500E49278F4441388ADCD95653487C4 /* Pods-DailyTopic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyTopic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1546E4C0DF7BFB8105C40D3E8BD5D846 /* LiquidFloatingActionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidFloatingActionButton.xcconfig; sourceTree = "<group>"; };
+		15F34CE08AA6C808E03162C5013D7629 /* Firebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Firebase.modulemap; sourceTree = "<group>"; };
 		1871FB302914616A7BA562730CF3CD05 /* Pods-DailyTopic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyTopic-umbrella.h"; sourceTree = "<group>"; };
 		1A23BAA867221C6C037F0087005A2690 /* Pods-DailyTopicTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyTopicTests.modulemap"; sourceTree = "<group>"; };
 		1A8C0AED6EBCF943EBE48AD92C6C9DAA /* Pods-DailyTopicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyTopicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AA21B1CD3DEA84A9DA44CB4416D2376 /* LiquidFloatingActionButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidFloatingActionButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAFAD2A51A3E1AEE09E92E7E15FF30B /* Pods-DailyTopicUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyTopicUITests-dummy.m"; sourceTree = "<group>"; };
+		1C2DE34F62A17A93D23E327E1EE8ECF4 /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
+		1FE222AB680BD30103E518748B263B77 /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
 		2060F279F8E041EC68D04B722BA7C5D4 /* Pods-DailyTopicTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyTopicTests-dummy.m"; sourceTree = "<group>"; };
 		2094E551A80DA150B784580109851862 /* Pods-DailyTopicTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyTopicTests-frameworks.sh"; sourceTree = "<group>"; };
-		224368C5EEC49D4D956B5B95BB215BFB /* libFirebaseStatic.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libFirebaseStatic.a; sourceTree = "<group>"; };
 		2562A3079A7CC4487933C167DCA75FBA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		2A1D6E8156D856968AFFA11DC1EC20D7 /* Pods-DailyTopic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyTopic.modulemap"; sourceTree = "<group>"; };
-		39B3BBA2803063B077ABE67B6DF81B02 /* Pods_DailyTopicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C7CA58E3DA234AA2574549CD49238A7 /* Firebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Firebase.modulemap; sourceTree = "<group>"; };
+		3055FD01521B975F42CB318D8566FFCC /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A2E319944048FC7B2669A6BF2CCEF2 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
 		3CDBB7E415D6A870A5AD72F82E1F55BF /* Pods-DailyTopicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyTopicTests.release.xcconfig"; sourceTree = "<group>"; };
+		3FF6CC0F1844BB0EF383872D65AA0700 /* Firebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-umbrella.h"; sourceTree = "<group>"; };
 		43763EBF038235998B2E2E84602BF930 /* Pods-DailyTopic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyTopic-resources.sh"; sourceTree = "<group>"; };
 		4950A4FBBD3F8C142DB42560E0C4C5EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C55D723C32691274B35ABC3497B34F3 /* Pods_DailyTopicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A610D8F089B6A1094DE0F58920182F /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
 		4CB18831D922A6F9D279F561A3FF1052 /* Pods-DailyTopic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyTopic-frameworks.sh"; sourceTree = "<group>"; };
 		4F7EFEE0C7DC3D0E104D7500C0708D34 /* Pods-DailyTopicUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyTopicUITests-frameworks.sh"; sourceTree = "<group>"; };
-		55000294CC62B92A597CC865BC53ECFC /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
+		5B2989CAA91446DF69630CBBF7BA1B1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E5CD08FDA81172742532DFF6F929972 /* Pods-DailyTopic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyTopic.debug.xcconfig"; sourceTree = "<group>"; };
+		626459ED1F2A43FC983800136F12DD70 /* Pods_DailyTopicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTopicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		631C7879B4FF5DAF62305D0247AF58AD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		646D0842DD57FE77DA06FD5BBFBEB9F1 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		67250628E91E92E19B290C396DD02BC7 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
 		6F7D8DF493D53A880E6D325B5C9F793F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		760DB9A2C943C8821FF3CD8C31DEA5DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7E547A224BA2BD4DB4A5DB059D7F5898 /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
 		7EDD8D5356109E28C7958435092363D3 /* Pods-DailyTopicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyTopicTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FAF00C0F1831051F4CEA1ABCDC36984 /* Pods-DailyTopicUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DailyTopicUITests.modulemap"; sourceTree = "<group>"; };
 		800F7A712006CF4927B2A34212BF7373 /* Pods-DailyTopic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyTopic-acknowledgements.plist"; sourceTree = "<group>"; };
-		817BCDAD66E1493A462C3D125BB8A039 /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
-		85FE7BFEAA7B743553B973A7168CDD98 /* FDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FDataSnapshot.h; sourceTree = "<group>"; };
-		891B0E2082543D26FADFA72F524E77AF /* FAuthType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthType.h; sourceTree = "<group>"; };
-		8CAA7C78DB3882A984A96D28F8AA2D41 /* FirebaseApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseApp.h; sourceTree = "<group>"; };
+		8049E433B46256F71535E9F5F6DB2B20 /* libFirebaseStatic.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libFirebaseStatic.a; sourceTree = "<group>"; };
+		876F8C57B4A2C15336874B0788356D77 /* ResourceBundle-LiquidFloatingActionButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LiquidFloatingActionButton-Info.plist"; sourceTree = "<group>"; };
 		8FF171F686F04BB4730D36B6C1651D7A /* Pods-DailyTopicTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyTopicTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		91C0143DCE5A276FD546BC307BA6384A /* Firebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Firebase-dummy.m"; sourceTree = "<group>"; };
+		93A318ECC24F78AFBB78C0998FDF63A2 /* LiquidFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LiquidFloatingActionButton.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9726FDC67EF47C28FEC9A974D42B81B4 /* FConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FConfig.h; sourceTree = "<group>"; };
-		99994D7C8CADD905BE2B9BBD61C5DAD8 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		944181139BA6E0224A6EC98390620567 /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
+		99FFA21EFA583E3D564A5B5AB3B53A37 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
 		9C787827B71775AA74C3B343D542629C /* Pods-DailyTopicUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DailyTopicUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2E2AC3209047C6550E8D065954966F5 /* FQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FQuery.h; sourceTree = "<group>"; };
-		A35E3E3F0CCA6B0B0A5E20810C135EA2 /* Firebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-umbrella.h"; sourceTree = "<group>"; };
+		A272A3E580C88A75DE800DBFEC92A220 /* Firebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-prefix.pch"; sourceTree = "<group>"; };
 		A3D1A5D44D0D799F07DD2ED587900565 /* Pods-DailyTopicUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyTopicUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A3FA09158901C4C343456CAD7FE9B7B4 /* Pods-DailyTopicTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyTopicTests-resources.sh"; sourceTree = "<group>"; };
 		A72601175310C42DDA9E3B8C1EEB02EA /* Pods-DailyTopic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DailyTopic-dummy.m"; sourceTree = "<group>"; };
+		A8D0F9AA3391468E10F136C35339BC85 /* FirebaseApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseApp.h; sourceTree = "<group>"; };
+		A9F9C811ACE577397C9055540BA28706 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		AE289DF1E7913364D65CCEA8B36C5387 /* Firebase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Firebase.xcconfig; sourceTree = "<group>"; };
 		AEBB6F4DE6AF4D78EEE08C3AFCB70B2C /* Pods-DailyTopic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyTopic.release.xcconfig"; sourceTree = "<group>"; };
+		B4D0B4C197612FEFFC1DED01F34CD241 /* Firebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Firebase-dummy.m"; sourceTree = "<group>"; };
+		B7777F06D2AD5674FC0F97FE8BA70503 /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81A89E7C813F80064402D93318E5589 /* Pods-DailyTopicUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DailyTopicUITests-resources.sh"; sourceTree = "<group>"; };
-		B8A3E022EEBF7EE421677F959588CBDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9A06FFED058218134C702A407304A9F /* FTransactionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FTransactionResult.h; sourceTree = "<group>"; };
+		B9267A02985620F29BBD7A02B634F666 /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
+		BC5680AF2FFB0AFD6F8A7A07FAA5DA7B /* FConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FConfig.h; sourceTree = "<group>"; };
 		C07670D9C5D5308382E986626595B39E /* Pods-DailyTopicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DailyTopicUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C30DAF734CAAF2F494DE720B2386CFFF /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
-		CDBB06694A091085C1CDD755EBC4B578 /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
 		CF31FD9EF374D14EEE908BAA54BB5C65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D113C718BE16B57CB4409D8AADD9B8BA /* LiquidFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
 		DA511103A8196B6A43214A6BD733EF18 /* Pods-DailyTopicTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DailyTopicTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DD2708ACCEBA03B6653240D9EEE772B3 /* FQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FQuery.h; sourceTree = "<group>"; };
+		DFD4FF3ADB3E6967B18054AD79C7415C /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = Pod/Classes/LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		E0331A8DB6AEC0A740C4C06C5D3C2750 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		E30CF897D0A739778EF618E5E637E864 /* Pods-DailyTopicUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyTopicUITests-umbrella.h"; sourceTree = "<group>"; };
-		E6BB016D3ABEBF694D68538838DE8DA0 /* Firebase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Firebase.xcconfig; sourceTree = "<group>"; };
+		E30DAE1AE3475F560BC46798E9377598 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97BFA339E7099FD21C8E0F0DAB7BF51 /* FTransactionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FTransactionResult.h; sourceTree = "<group>"; };
+		ED2F111170835CF43C2EE3DCA2316446 /* FDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FDataSnapshot.h; sourceTree = "<group>"; };
+		EEDAB4095303C8B690A4A8E8E9A02084 /* FAuthType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthType.h; sourceTree = "<group>"; };
+		FA545E136CBFA5B1333B1BD2E54F15F1 /* LiquidFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		FC65615E84CF9A6B87EF3EE9B0F793BF /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
 		FED567E73AE749B23E1D699E27D0E3D2 /* Pods-DailyTopicTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DailyTopicTests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23EE5653C5344F25E6EAECA93959DFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A479F0694FBB35C02B8A3D0571C495E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4772D6AE64BC95871FB42138D11943E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		555D77BEC4D41E02D549FDB16FB2BB86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,6 +182,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C569318E9E96F70CD9CEBE58BC0A7CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B6A6F41C398F815323EB2037E8EBAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7E10F383DCD59079712A57B50DCF88E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,17 +201,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB813443B62C3F5D831FC474BC9CE762 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF319F046962502FBCBE36EB3C3E609B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05587536E7920EC713AD89F5327738AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3055FD01521B975F42CB318D8566FFCC /* Firebase.framework */,
+				1AA21B1CD3DEA84A9DA44CB4416D2376 /* LiquidFloatingActionButton.bundle */,
+				B7777F06D2AD5674FC0F97FE8BA70503 /* LiquidFloatingActionButton.framework */,
+				0F46D335EF2C8F009742229673BD070E /* Pods_DailyTopic.framework */,
+				0B45F4654EFE00BD1D2212D8366287FB /* Pods_DailyTopicTests.framework */,
+				626459ED1F2A43FC983800136F12DD70 /* Pods_DailyTopicUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,10 +243,34 @@
 			path = "Target Support Files/Pods-DailyTopicTests";
 			sourceTree = "<group>";
 		};
-		5883428897D1426E6EB96D7E36556192 /* Frameworks */ = {
+		27E57BDB91DA05C444B6E272CA77F570 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				224368C5EEC49D4D956B5B95BB215BFB /* libFirebaseStatic.a */,
+				E30DAE1AE3475F560BC46798E9377598 /* Info.plist */,
+				93A318ECC24F78AFBB78C0998FDF63A2 /* LiquidFloatingActionButton.modulemap */,
+				1546E4C0DF7BFB8105C40D3E8BD5D846 /* LiquidFloatingActionButton.xcconfig */,
+				D113C718BE16B57CB4409D8AADD9B8BA /* LiquidFloatingActionButton-dummy.m */,
+				0E67C7F086C545DD23FD2D2366CB1F3E /* LiquidFloatingActionButton-prefix.pch */,
+				FA545E136CBFA5B1333B1BD2E54F15F1 /* LiquidFloatingActionButton-umbrella.h */,
+				876F8C57B4A2C15336874B0788356D77 /* ResourceBundle-LiquidFloatingActionButton-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LiquidFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		3DED5A17FE40D09415D29AEF85169987 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BA365796A8EBDF606C205678601A817 /* Firebase */,
+				F007535994322CB94F0274701F8BEA77 /* LiquidFloatingActionButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		563E212BCF9CED0081068A64118C3666 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8049E433B46256F71535E9F5F6DB2B20 /* libFirebaseStatic.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -201,26 +296,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		723F73A4ECDF336DB9126BCC693C279F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				03C056D204C50BE209D171178185C8F7 /* Firebase.framework */,
-				009F9504BAF6C25F5236C9DAF33AA049 /* Pods_DailyTopic.framework */,
-				4C55D723C32691274B35ABC3497B34F3 /* Pods_DailyTopicTests.framework */,
-				39B3BBA2803063B077ABE67B6DF81B02 /* Pods_DailyTopicUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				F56CE447D2542B744EB0DA47C71E6EDD /* Pods */,
-				723F73A4ECDF336DB9126BCC693C279F /* Products */,
+				3DED5A17FE40D09415D29AEF85169987 /* Pods */,
+				05587536E7920EC713AD89F5327738AC /* Products */,
 				6CC165D80D1BB20AA5A66786D63784F9 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9BA365796A8EBDF606C205678601A817 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				99FFA21EFA583E3D564A5B5AB3B53A37 /* Empty.m */,
+				B9267A02985620F29BBD7A02B634F666 /* FAuthData.h */,
+				EEDAB4095303C8B690A4A8E8E9A02084 /* FAuthType.h */,
+				BC5680AF2FFB0AFD6F8A7A07FAA5DA7B /* FConfig.h */,
+				ED2F111170835CF43C2EE3DCA2316446 /* FDataSnapshot.h */,
+				1C2DE34F62A17A93D23E327E1EE8ECF4 /* FEventType.h */,
+				E0331A8DB6AEC0A740C4C06C5D3C2750 /* Firebase.h */,
+				A8D0F9AA3391468E10F136C35339BC85 /* FirebaseApp.h */,
+				FC65615E84CF9A6B87EF3EE9B0F793BF /* FirebaseServerValue.h */,
+				944181139BA6E0224A6EC98390620567 /* FMutableData.h */,
+				DD2708ACCEBA03B6653240D9EEE772B3 /* FQuery.h */,
+				E97BFA339E7099FD21C8E0F0DAB7BF51 /* FTransactionResult.h */,
+				563E212BCF9CED0081068A64118C3666 /* Frameworks */,
+				EA2C36C439DFE897DDED895084A2CBA0 /* Support Files */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		A3302D0D5D6938023A014097207AAD0B /* Pods-DailyTopic */ = {
@@ -259,52 +364,47 @@
 			path = "Target Support Files/Pods-DailyTopicUITests";
 			sourceTree = "<group>";
 		};
-		B870B24C59D78DF34E50CD8E9DB3800F /* Firebase */ = {
+		EA2C36C439DFE897DDED895084A2CBA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C30DAF734CAAF2F494DE720B2386CFFF /* Empty.m */,
-				CDBB06694A091085C1CDD755EBC4B578 /* FAuthData.h */,
-				891B0E2082543D26FADFA72F524E77AF /* FAuthType.h */,
-				9726FDC67EF47C28FEC9A974D42B81B4 /* FConfig.h */,
-				85FE7BFEAA7B743553B973A7168CDD98 /* FDataSnapshot.h */,
-				817BCDAD66E1493A462C3D125BB8A039 /* FEventType.h */,
-				99994D7C8CADD905BE2B9BBD61C5DAD8 /* Firebase.h */,
-				8CAA7C78DB3882A984A96D28F8AA2D41 /* FirebaseApp.h */,
-				55000294CC62B92A597CC865BC53ECFC /* FirebaseServerValue.h */,
-				7E547A224BA2BD4DB4A5DB059D7F5898 /* FMutableData.h */,
-				A2E2AC3209047C6550E8D065954966F5 /* FQuery.h */,
-				B9A06FFED058218134C702A407304A9F /* FTransactionResult.h */,
-				5883428897D1426E6EB96D7E36556192 /* Frameworks */,
-				FCDF2535463133900325F78E576B07E8 /* Support Files */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		F56CE447D2542B744EB0DA47C71E6EDD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B870B24C59D78DF34E50CD8E9DB3800F /* Firebase */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FCDF2535463133900325F78E576B07E8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C7CA58E3DA234AA2574549CD49238A7 /* Firebase.modulemap */,
-				E6BB016D3ABEBF694D68538838DE8DA0 /* Firebase.xcconfig */,
-				91C0143DCE5A276FD546BC307BA6384A /* Firebase-dummy.m */,
-				104481390B1098325AD2AFB70FC78878 /* Firebase-prefix.pch */,
-				A35E3E3F0CCA6B0B0A5E20810C135EA2 /* Firebase-umbrella.h */,
-				B8A3E022EEBF7EE421677F959588CBDA /* Info.plist */,
+				15F34CE08AA6C808E03162C5013D7629 /* Firebase.modulemap */,
+				AE289DF1E7913364D65CCEA8B36C5387 /* Firebase.xcconfig */,
+				B4D0B4C197612FEFFC1DED01F34CD241 /* Firebase-dummy.m */,
+				A272A3E580C88A75DE800DBFEC92A220 /* Firebase-prefix.pch */,
+				3FF6CC0F1844BB0EF383872D65AA0700 /* Firebase-umbrella.h */,
+				5B2989CAA91446DF69630CBBF7BA1B1F /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Firebase";
 			sourceTree = "<group>";
 		};
+		F007535994322CB94F0274701F8BEA77 /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				67250628E91E92E19B290C396DD02BC7 /* ArrayEx.swift */,
+				39A2E319944048FC7B2669A6BF2CCEF2 /* CGPointEx.swift */,
+				A9F9C811ACE577397C9055540BA28706 /* CGRectEx.swift */,
+				DFD4FF3ADB3E6967B18054AD79C7415C /* LiquidFloatingActionButton.swift */,
+				080DB4E43569E4996C6C1B4C922D515C /* LiquidUtil.swift */,
+				49A610D8F089B6A1094DE0F58920182F /* LiquittableCircle.swift */,
+				646D0842DD57FE77DA06FD5BBFBEB9F1 /* SimpleCircleLiquidEngine.swift */,
+				1FE222AB680BD30103E518748B263B77 /* UIColorEx.swift */,
+				27E57BDB91DA05C444B6E272CA77F570 /* Support Files */,
+			);
+			path = LiquidFloatingActionButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		04F4D890D5EF6701EE30839AB00ACB8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD635561809D218A952928FCA3BC1B78 /* LiquidFloatingActionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,11 +424,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		790BCE328551D33E08671C618A9A901B /* Headers */ = {
+		6E39F54EBE44FD0FDF7E950E3B60E95D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E297267353ADB9100483E1C2ECBF218 /* Pods-DailyTopic-umbrella.h in Headers */,
+				C03D9D3F3B3EBA8CCE0EC249D63D5C55 /* Pods-DailyTopic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,22 +451,40 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		39A1A25C42F05A72CA0E1A5DC4810C15 /* Pods-DailyTopic */ = {
+		2E4A37C88D68A62EA5C1BC7A2A4D19AE /* LiquidFloatingActionButton-LiquidFloatingActionButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B1D4BB442FAEE967F6ECDA3E943FCF4 /* Build configuration list for PBXNativeTarget "Pods-DailyTopic" */;
+			buildConfigurationList = 2FBC67EBFEEE1117389429AE8C14564B /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-LiquidFloatingActionButton" */;
 			buildPhases = (
-				6B0CD64E77DBCD17EB001F6EA918A7AD /* Sources */,
-				FB813443B62C3F5D831FC474BC9CE762 /* Frameworks */,
-				790BCE328551D33E08671C618A9A901B /* Headers */,
+				64C51C33B8DFC1470D2FE029A6D45D18 /* Sources */,
+				23EE5653C5344F25E6EAECA93959DFD7 /* Frameworks */,
+				1714DC3BD0B3E16B173A88A655453C03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				628192C0DFAC69CAABA281DD349DF985 /* PBXTargetDependency */,
+			);
+			name = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			productName = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			productReference = 1AA21B1CD3DEA84A9DA44CB4416D2376 /* LiquidFloatingActionButton.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		3663C777246CD09C0500DF1B7FDCEBBE /* Pods-DailyTopic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FABD1F6A01D85D00F6C2B936A6ACD89E /* Build configuration list for PBXNativeTarget "Pods-DailyTopic" */;
+			buildPhases = (
+				DABD6D1BFD949DBC47EF247AA3B6356D /* Sources */,
+				4A479F0694FBB35C02B8A3D0571C495E /* Frameworks */,
+				6E39F54EBE44FD0FDF7E950E3B60E95D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				527A6718D42175DED936B8E1C870E352 /* PBXTargetDependency */,
+				778227C3AD35D4420C739CC80289DE01 /* PBXTargetDependency */,
 			);
 			name = "Pods-DailyTopic";
 			productName = "Pods-DailyTopic";
-			productReference = 009F9504BAF6C25F5236C9DAF33AA049 /* Pods_DailyTopic.framework */;
+			productReference = 0F46D335EF2C8F009742229673BD070E /* Pods_DailyTopic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4AFBBECBEF61C8D1CF897D13D87D7D30 /* Pods-DailyTopicTests */ = {
@@ -383,7 +501,7 @@
 			);
 			name = "Pods-DailyTopicTests";
 			productName = "Pods-DailyTopicTests";
-			productReference = 4C55D723C32691274B35ABC3497B34F3 /* Pods_DailyTopicTests.framework */;
+			productReference = 0B45F4654EFE00BD1D2212D8366287FB /* Pods_DailyTopicTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B558FD9C63287A8A46E50F10F372F8AE /* Pods-DailyTopicUITests */ = {
@@ -400,7 +518,7 @@
 			);
 			name = "Pods-DailyTopicUITests";
 			productName = "Pods-DailyTopicUITests";
-			productReference = 39B3BBA2803063B077ABE67B6DF81B02 /* Pods_DailyTopicUITests.framework */;
+			productReference = 626459ED1F2A43FC983800136F12DD70 /* Pods_DailyTopicUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7AC9326D819482593FE118E915409D7 /* Firebase */ = {
@@ -417,7 +535,26 @@
 			);
 			name = Firebase;
 			productName = Firebase;
-			productReference = 03C056D204C50BE209D171178185C8F7 /* Firebase.framework */;
+			productReference = 3055FD01521B975F42CB318D8566FFCC /* Firebase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECB4143196184B0E0EA02182DB2B9CCA /* LiquidFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B577CF2C4C8B7512267A39C5C0849B6 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */;
+			buildPhases = (
+				CE1D12580B1F9E78D08AD84F59312FEE /* Sources */,
+				8C569318E9E96F70CD9CEBE58BC0A7CC /* Frameworks */,
+				4695172BA8D46356F072851DA9ED351D /* Resources */,
+				04F4D890D5EF6701EE30839AB00ACB8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE7CB5B7883807D0DC3EFE58E8F5318 /* PBXTargetDependency */,
+			);
+			name = LiquidFloatingActionButton;
+			productName = LiquidFloatingActionButton;
+			productReference = B7777F06D2AD5674FC0F97FE8BA70503 /* LiquidFloatingActionButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -437,17 +574,37 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 723F73A4ECDF336DB9126BCC693C279F /* Products */;
+			productRefGroup = 05587536E7920EC713AD89F5327738AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B7AC9326D819482593FE118E915409D7 /* Firebase */,
-				39A1A25C42F05A72CA0E1A5DC4810C15 /* Pods-DailyTopic */,
+				ECB4143196184B0E0EA02182DB2B9CCA /* LiquidFloatingActionButton */,
+				2E4A37C88D68A62EA5C1BC7A2A4D19AE /* LiquidFloatingActionButton-LiquidFloatingActionButton */,
+				3663C777246CD09C0500DF1B7FDCEBBE /* Pods-DailyTopic */,
 				4AFBBECBEF61C8D1CF897D13D87D7D30 /* Pods-DailyTopicTests */,
 				B558FD9C63287A8A46E50F10F372F8AE /* Pods-DailyTopicUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1714DC3BD0B3E16B173A88A655453C03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4695172BA8D46356F072851DA9ED351D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72042359B6606B6363E495430D780479 /* LiquidFloatingActionButton.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46E052D320E3B778B76D8393E0BAFE0F /* Sources */ = {
@@ -459,11 +616,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6B0CD64E77DBCD17EB001F6EA918A7AD /* Sources */ = {
+		64C51C33B8DFC1470D2FE029A6D45D18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128CB115326BD797A1CA0FB9BF037705 /* Pods-DailyTopic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE1D12580B1F9E78D08AD84F59312FEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4244375967A72339B965317FB0B307AD /* ArrayEx.swift in Sources */,
+				BA98EBDB57D30CC7369E42012CB3FB34 /* CGPointEx.swift in Sources */,
+				144405A414830766CD06305169178402 /* CGRectEx.swift in Sources */,
+				5FBBB3A122CEA1951C3104AEA6F5100C /* LiquidFloatingActionButton-dummy.m in Sources */,
+				AF71B63F7B7FB9C09F4A1424BAFE1360 /* LiquidFloatingActionButton.swift in Sources */,
+				AE59C3FD0BEF00C2CCAB0E64C00EC6F2 /* LiquidUtil.swift in Sources */,
+				BCD46D72F2A27D0DF398386FF30B8F26 /* LiquittableCircle.swift in Sources */,
+				DB0D31FDF40C1AE86E988CAB5F7D6578 /* SimpleCircleLiquidEngine.swift in Sources */,
+				FF747B3BDF1D1DDF633B9FEBFA9C15ED /* UIColorEx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABD6D1BFD949DBC47EF247AA3B6356D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222B3A0A26BC9529FDECA4F15FBDE173 /* Pods-DailyTopic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,15 +666,60 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		628192C0DFAC69CAABA281DD349DF985 /* PBXTargetDependency */ = {
+		527A6718D42175DED936B8E1C870E352 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Firebase;
 			target = B7AC9326D819482593FE118E915409D7 /* Firebase */;
-			targetProxy = DEC59E8977BC3AA904774B7738AD5ED6 /* PBXContainerItemProxy */;
+			targetProxy = 8405C938C7C946AD7CAB9EB4A4C7E8AD /* PBXContainerItemProxy */;
+		};
+		778227C3AD35D4420C739CC80289DE01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = ECB4143196184B0E0EA02182DB2B9CCA /* LiquidFloatingActionButton */;
+			targetProxy = 0AE4C8CA29A3918B1EF2B24B92CE82D2 /* PBXContainerItemProxy */;
+		};
+		FAE7CB5B7883807D0DC3EFE58E8F5318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			target = 2E4A37C88D68A62EA5C1BC7A2A4D19AE /* LiquidFloatingActionButton-LiquidFloatingActionButton */;
+			targetProxy = 241D7E67C3518A9E632A0EDFC7D211A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		27CAAF205472FAD4229168AFE88F98E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBB6F4DE6AF4D78EEE08C3AFCB70B2C /* Pods-DailyTopic.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyTopic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyTopic/Pods-DailyTopic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DailyTopic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2CE16AC72762C01C5DC595053F1F2EF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -536,6 +761,74 @@
 			};
 			name = Debug;
 		};
+		2D20CE39646A7CC1689EBF29153BBCD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1546E4C0DF7BFB8105C40D3E8BD5D846 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR/LiquidFloatingActionButton;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/ResourceBundle-LiquidFloatingActionButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		420FE7ECFEAAD07E720DD76DEC9B049C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1546E4C0DF7BFB8105C40D3E8BD5D846 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR/LiquidFloatingActionButton;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/ResourceBundle-LiquidFloatingActionButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		493CE59C35AC9D243FA538F4644DFB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E5CD08FDA81172742532DFF6F929972 /* Pods-DailyTopic.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DailyTopic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DailyTopic/Pods-DailyTopic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DailyTopic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8A138B7B69B670887EF13E77FFA9C2A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A8C0AED6EBCF943EBE48AD92C6C9DAA /* Pods-DailyTopicUITests.debug.xcconfig */;
@@ -571,7 +864,7 @@
 		};
 		9E5F9A409F7A80E320328AA627E5F72F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6BB016D3ABEBF694D68538838DE8DA0 /* Firebase.xcconfig */;
+			baseConfigurationReference = AE289DF1E7913364D65CCEA8B36C5387 /* Firebase.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -633,7 +926,7 @@
 		};
 		A137EDCFE721980B861039D09E3342BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6BB016D3ABEBF694D68538838DE8DA0 /* Firebase.xcconfig */;
+			baseConfigurationReference = AE289DF1E7913364D65CCEA8B36C5387 /* Firebase.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -655,6 +948,36 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A773B31935E3E241BDA4512956D5AFBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1546E4C0DF7BFB8105C40D3E8BD5D846 /* LiquidFloatingActionButton.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -730,10 +1053,11 @@
 			};
 			name = Release;
 		};
-		DABF2727362689D87119595EA46839E6 /* Debug */ = {
+		CB414F113BA4D5B7E5051F216B217AC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E5CD08FDA81172742532DFF6F929972 /* Pods-DailyTopic.debug.xcconfig */;
+			baseConfigurationReference = 1546E4C0DF7BFB8105C40D3E8BD5D846 /* LiquidFloatingActionButton.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -743,58 +1067,22 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DailyTopic/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DailyTopic/Pods-DailyTopic.modulemap";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DailyTopic;
+				PRODUCT_NAME = LiquidFloatingActionButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E2DCBB66DE511C0E55CCD732BA254730 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEBB6F4DE6AF4D78EEE08C3AFCB70B2C /* Pods-DailyTopic.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DailyTopic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DailyTopic/Pods-DailyTopic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DailyTopic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		EAC2B998CA0C3DC4433C84428EEEF711 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -850,6 +1138,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		2FBC67EBFEEE1117389429AE8C14564B /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D20CE39646A7CC1689EBF29153BBCD5 /* Debug */,
+				420FE7ECFEAAD07E720DD76DEC9B049C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -859,11 +1156,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B1D4BB442FAEE967F6ECDA3E943FCF4 /* Build configuration list for PBXNativeTarget "Pods-DailyTopic" */ = {
+		6B577CF2C4C8B7512267A39C5C0849B6 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DABF2727362689D87119595EA46839E6 /* Debug */,
-				E2DCBB66DE511C0E55CCD732BA254730 /* Release */,
+				CB414F113BA4D5B7E5051F216B217AC4 /* Debug */,
+				A773B31935E3E241BDA4512956D5AFBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -873,6 +1170,15 @@
 			buildConfigurations = (
 				EAC2B998CA0C3DC4433C84428EEEF711 /* Debug */,
 				A0D87A43F10550330AEAD0B8406C35F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FABD1F6A01D85D00F6C2B936A6ACD89E /* Build configuration list for PBXNativeTarget "Pods-DailyTopic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493CE59C35AC9D243FA538F4644DFB19 /* Debug */,
+				27CAAF205472FAD4229168AFE88F98E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

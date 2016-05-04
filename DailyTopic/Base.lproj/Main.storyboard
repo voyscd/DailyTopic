@@ -528,7 +528,7 @@
         <!--AddPicture-->
         <scene sceneID="xPc-KW-SVk">
             <objects>
-                <viewController title="AddPicture" id="IN3-O7-sUn" sceneMemberID="viewController">
+                <viewController title="AddPicture" id="IN3-O7-sUn" customClass="AddPictureViewController" customModule="DailyTopic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JCE-Sw-2Ww"/>
                         <viewControllerLayoutGuide type="bottom" id="q0Q-AN-nuJ"/>
@@ -537,46 +537,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVy-rn-GkT">
-                                <rect key="frame" x="0.0" y="480" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem title="Camera" id="KI4-Qa-gQD"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PAC-Ea-hgh"/>
-                                    <barButtonItem title="Library" id="XAb-3L-cn2"/>
-                                </items>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                </variation>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fU3-xj-hMU">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Add Picture" id="QUo-MI-59p"/>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-C7-E50">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-C7-E50">
                                 <rect key="frame" x="20" y="106" width="280" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="RRr-L9-89C"/>
+                                    <constraint firstAttribute="height" constant="128" id="mx6-Ra-bWf"/>
                                 </constraints>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="35" width="320" height="209"/>
                                 </variation>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fU3-xj-hMU">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Picture" id="QUo-MI-59p">
+                                        <barButtonItem key="leftBarButtonItem" image="createTopic" id="6pQ-ss-AdA"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVy-rn-GkT">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Camera" id="KI4-Qa-gQD">
+                                        <connections>
+                                            <action selector="cameraBtn:" destination="IN3-O7-sUn" id="f04-aP-28b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PAC-Ea-hgh"/>
+                                    <barButtonItem title="Library" id="XAb-3L-cn2">
+                                        <connections>
+                                            <action selector="libraryBtn:" destination="IN3-O7-sUn" id="Muq-6u-GmR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nVy-rn-GkT" firstAttribute="bottom" secondItem="q0Q-AN-nuJ" secondAttribute="top" id="2QP-3b-EMk"/>
-                            <constraint firstItem="nVy-rn-GkT" firstAttribute="leading" secondItem="fyR-3e-Gws" secondAttribute="leading" id="KHA-rh-LZC"/>
-                            <constraint firstItem="X7L-C7-E50" firstAttribute="leading" secondItem="fyR-3e-Gws" secondAttribute="leadingMargin" constant="4" id="OmZ-7x-Syd"/>
-                            <constraint firstItem="X7L-C7-E50" firstAttribute="centerX" secondItem="nVy-rn-GkT" secondAttribute="centerX" id="SRB-na-pOn"/>
-                            <constraint firstItem="X7L-C7-E50" firstAttribute="top" secondItem="JCE-Sw-2Ww" secondAttribute="bottom" constant="15" id="bqR-RR-W9d"/>
-                            <constraint firstAttribute="trailing" secondItem="nVy-rn-GkT" secondAttribute="trailing" id="vza-mv-8kH"/>
+                            <constraint firstItem="X7L-C7-E50" firstAttribute="leading" secondItem="fyR-3e-Gws" secondAttribute="leadingMargin" constant="4" id="EcI-yD-OTa"/>
+                            <constraint firstItem="nVy-rn-GkT" firstAttribute="bottom" secondItem="q0Q-AN-nuJ" secondAttribute="top" id="NI0-EX-aij"/>
+                            <constraint firstAttribute="trailing" secondItem="fU3-xj-hMU" secondAttribute="trailing" id="TBf-xc-Xdm"/>
+                            <constraint firstItem="X7L-C7-E50" firstAttribute="top" secondItem="fU3-xj-hMU" secondAttribute="bottom" constant="42" id="VR6-aV-LSa"/>
+                            <constraint firstItem="fU3-xj-hMU" firstAttribute="leading" secondItem="fyR-3e-Gws" secondAttribute="leading" id="bYB-5Z-H7P"/>
+                            <constraint firstItem="fU3-xj-hMU" firstAttribute="trailing" secondItem="nVy-rn-GkT" secondAttribute="trailing" id="gDC-mu-ZyB"/>
+                            <constraint firstItem="fU3-xj-hMU" firstAttribute="leading" secondItem="nVy-rn-GkT" secondAttribute="leading" id="nHo-Zh-je3"/>
+                            <constraint firstItem="fU3-xj-hMU" firstAttribute="centerX" secondItem="X7L-C7-E50" secondAttribute="centerX" id="qeJ-z3-L2J"/>
+                            <constraint firstItem="fU3-xj-hMU" firstAttribute="top" secondItem="JCE-Sw-2Ww" secondAttribute="bottom" id="rXY-Tl-YRR"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="X7L-C7-E50" id="oun-ky-czW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vn4-QE-0nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

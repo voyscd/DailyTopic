@@ -18,6 +18,7 @@
 		65A254ED1CD45068001D5FEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254EC1CD45068001D5FEF /* LoginViewController.swift */; };
 		65A254EF1CD450CF001D5FEF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */; };
 		65BF76B61CD47CFC00C86D47 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */; };
+		65CC701E1CDA21710039CF49 /* AddPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */; };
 		65ECE7A91CD36A9200FC7F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */; };
 		65ECE7B11CD36A9300FC7F29 /* DailyTopic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE7AF1CD36A9300FC7F29 /* DailyTopic.xcdatamodeld */; };
 		65ECE7B31CD36A9300FC7F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ECE7B21CD36A9300FC7F29 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		65A254EC1CD45068001D5FEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPictureViewController.swift; sourceTree = "<group>"; };
 		65ECE7A51CD36A9200FC7F29 /* DailyTopic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyTopic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65ECE7B01CD36A9300FC7F29 /* DailyTopic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyTopic.xcdatamodel; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			name = BackgroundVideo;
 			sourceTree = "<group>";
 		};
+		65CC701C1CDA21550039CF49 /* AddPicture */ = {
+			isa = PBXGroup;
+			children = (
+				65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */,
+			);
+			name = AddPicture;
+			sourceTree = "<group>";
+		};
 		65ECE79C1CD36A9200FC7F29 = {
 			isa = PBXGroup;
 			children = (
@@ -150,9 +160,10 @@
 		65ECE7A71CD36A9200FC7F29 /* DailyTopic */ = {
 			isa = PBXGroup;
 			children = (
+				6588E9311CD48E670090DB88 /* BackgroundVideo */,
+				65CC701C1CDA21550039CF49 /* AddPicture */,
 				6589A4631CD87DF300B72FFA /* Main.storyboard */,
 				659B9AA31CD7A09C00961008 /* Background.mp4 */,
-				6588E9311CD48E670090DB88 /* BackgroundVideo */,
 				65A254E61CD44865001D5FEF /* BaseService.swift */,
 				65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */,
 				6589A45F1CD877A900B72FFA /* WelcomeViewController.swift */,
@@ -481,6 +492,7 @@
 				65FA5A351CD4BF2900F14F41 /* CameraViewController.swift in Sources */,
 				6589A4601CD877A900B72FFA /* WelcomeViewController.swift in Sources */,
 				6560D61F1CDA02240088034C /* FavouriteViewController.swift in Sources */,
+				65CC701E1CDA21710039CF49 /* AddPictureViewController.swift in Sources */,
 				65A254E71CD44865001D5FEF /* BaseService.swift in Sources */,
 				65FACD771CD487A4000CAC6E /* VideoCutter.swift in Sources */,
 				65BF76B61CD47CFC00C86D47 /* HomePageViewController.swift in Sources */,

@@ -117,9 +117,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6555A35B1CDA399A00E1A3BA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				65A254E61CD44865001D5FEF /* BaseService.swift */,
+				6589A45F1CD877A900B72FFA /* WelcomeViewController.swift */,
+				65A254EC1CD45068001D5FEF /* LoginViewController.swift */,
+				65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		6588E9311CD48E670090DB88 /* BackgroundVideo */ = {
 			isa = PBXGroup;
 			children = (
+				659B9AA31CD7A09C00961008 /* Background.mp4 */,
 				65FA5A341CD4BF2900F14F41 /* CameraViewController.swift */,
 				65FACD741CD48756000CAC6E /* VideoSplashViewController.swift */,
 				65FACD761CD487A4000CAC6E /* VideoCutter.swift */,
@@ -160,15 +172,11 @@
 		65ECE7A71CD36A9200FC7F29 /* DailyTopic */ = {
 			isa = PBXGroup;
 			children = (
+				6555A35B1CDA399A00E1A3BA /* Login */,
 				6588E9311CD48E670090DB88 /* BackgroundVideo */,
 				65CC701C1CDA21550039CF49 /* AddPicture */,
 				6589A4631CD87DF300B72FFA /* Main.storyboard */,
-				659B9AA31CD7A09C00961008 /* Background.mp4 */,
-				65A254E61CD44865001D5FEF /* BaseService.swift */,
 				65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */,
-				6589A45F1CD877A900B72FFA /* WelcomeViewController.swift */,
-				65A254EC1CD45068001D5FEF /* LoginViewController.swift */,
-				65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */,
 				65ECE7B21CD36A9300FC7F29 /* Assets.xcassets */,
 				65ECE7B41CD36A9300FC7F29 /* LaunchScreen.storyboard */,
 				65ECE7B71CD36A9300FC7F29 /* Info.plist */,

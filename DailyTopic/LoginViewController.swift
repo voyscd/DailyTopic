@@ -11,7 +11,7 @@ import Foundation
 
 
 
-class LoginViewController: VideoSplashViewController{
+class LoginViewController: VideoSplashViewController,UITextFieldDelegate{
 
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -36,6 +36,9 @@ class LoginViewController: VideoSplashViewController{
         loginButton.layer.cornerRadius = 5
  
        CancelButton.layer.cornerRadius = 5
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
         
     }
     
@@ -112,6 +115,21 @@ class LoginViewController: VideoSplashViewController{
         
         NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "uid")
         self.logoutButton.hidden = true
+    }
+    
+    
+    func textFieldDidBeginEditing(textField: UITextField!) {    //delegate method
+        
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        
+        return true
     }
     
 }

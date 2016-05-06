@@ -10,19 +10,28 @@ import UIKit
 import LiquidFloatingActionButton
 
 var cells = [LiquidFloatingCell]()  //DataSource
+var imagePicker = UIImagePickerController()
 
+class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate{
 
-class CreateTopicViewController: UIViewController {
-
-
-    var floatingActionButton: LiquidFloatingActionButton!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+var floatingActionButton: LiquidFloatingActionButton!
+    
     
     
     override func viewDidLoad(){
         super.viewDidLoad()
+         imagePicker.delegate = self
         createFloatingButtons()
-        
-        
     }
     
     
@@ -30,11 +39,11 @@ class CreateTopicViewController: UIViewController {
     
     private func createFloatingButtons()
     {
-        cells.append(createButtonCell("Add"))
+    
         cells.append(createButtonCell("Camera"))
         cells.append(createButtonCell("library"))
         
-        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 300,y: self.view.frame.height - 56 - 80, width: 56 , height: 56)
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 260,y: self.view.frame.height - 56 - 80, width: 56 , height: 56)
         let floatingButton = createButton(floatingFrame,style: .Up)
         
         self.view.addSubview(floatingButton)
@@ -59,7 +68,11 @@ class CreateTopicViewController: UIViewController {
     }
     
     
-    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        
+        return true
+    }
     
 
 }
@@ -87,6 +100,22 @@ extension UIViewController: LiquidFloatingActionButtonDelegate
    public func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
        {
         print("button number \(index) did click")
+    
+        if index == 0
+        {
+         
+            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+            presentViewController(imagePicker, animated: true, completion: nil)
+        }
+        
+        if index == 1
+        {
+            imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            presentViewController(imagePicker, animated: true, completion: nil)
+        }
+        
+
+        
     }
 }
 

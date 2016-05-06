@@ -31,6 +31,7 @@ class AddPictureViewController: UIViewController,UIImagePickerControllerDelegate
     
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(imagePicker, animated: true, completion: nil)
+  
     }
     
     

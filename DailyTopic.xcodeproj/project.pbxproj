@@ -131,6 +131,14 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
+		658842D91CDCCA6B008BB38D /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				6560D61A1CDA01D20088034C /* UserProfileViewController.swift */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
 		6588E9311CD48E670090DB88 /* BackgroundVideo */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +150,13 @@
 			name = BackgroundVideo;
 			sourceTree = "<group>";
 		};
-		65CC701C1CDA21550039CF49 /* AddPicture */ = {
+		65CC701C1CDA21550039CF49 /* CreateTopic */ = {
 			isa = PBXGroup;
 			children = (
+				65FA5A321CD4A5D500F14F41 /* CreateTopicViewController.swift */,
 				65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */,
 			);
-			name = AddPicture;
+			name = CreateTopic;
 			sourceTree = "<group>";
 		};
 		65ECE79C1CD36A9200FC7F29 = {
@@ -175,9 +184,10 @@
 		65ECE7A71CD36A9200FC7F29 /* DailyTopic */ = {
 			isa = PBXGroup;
 			children = (
+				658842D91CDCCA6B008BB38D /* UserProfile */,
 				6555A35B1CDA399A00E1A3BA /* Login */,
 				6588E9311CD48E670090DB88 /* BackgroundVideo */,
-				65CC701C1CDA21550039CF49 /* AddPicture */,
+				65CC701C1CDA21550039CF49 /* CreateTopic */,
 				6589A4631CD87DF300B72FFA /* Main.storyboard */,
 				65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */,
 				65ECE7B21CD36A9300FC7F29 /* Assets.xcassets */,
@@ -185,8 +195,6 @@
 				65ECE7B71CD36A9300FC7F29 /* Info.plist */,
 				65ECE7AF1CD36A9300FC7F29 /* DailyTopic.xcdatamodeld */,
 				65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */,
-				6560D61A1CDA01D20088034C /* UserProfileViewController.swift */,
-				65FA5A321CD4A5D500F14F41 /* CreateTopicViewController.swift */,
 				6560D61C1CDA01F30088034C /* SearchViewController.swift */,
 				6560D61E1CDA02240088034C /* FavouriteViewController.swift */,
 			);

@@ -8,6 +8,7 @@
 
 import UIKit
 import LiquidFloatingActionButton
+import Firebase
 
 var cells = [LiquidFloatingCell]()  //DataSource
 var imagePicker = UIImagePickerController()
@@ -15,6 +16,7 @@ var imagePicker = UIImagePickerController()
 class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate{
 
     
+    @IBOutlet weak var topicTextfield: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -31,7 +33,22 @@ var floatingActionButton: LiquidFloatingActionButton!
     override func viewDidLoad(){
         super.viewDidLoad()
          imagePicker.delegate = self
+          topicTextfield.delegate = self
         createFloatingButtons()
+        
+        
+        
+        var ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/web/saving-data/fireblog")
+        
+     
+        var alanisawesome = ["full_name": "Alan Turing", "date_of_birth": "June 23, 1912"]
+        var gracehop = ["full_name": "Grace Hopper", "date_of_birth": "December 9, 1906"]
+        
+        var usersRef = ref.childByAppendingPath("users")
+        
+        var users = ["alanisawesome": alanisawesome, "gracehop": gracehop]
+        usersRef.setValue(users)
+        
     }
     
     
@@ -68,11 +85,22 @@ var floatingActionButton: LiquidFloatingActionButton!
     }
     
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+   
+    
+    func textFieldDidBeginEditing(textField: UITextField!) {    //delegate method
+        
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {   //delegate method
         textField.resignFirstResponder()
         
         return true
     }
+
     
 
 }
@@ -90,7 +118,6 @@ extension UIViewController: LiquidFloatingActionButtonDataSource
     {
         return cells[index]
     }
-    
 }
 
 

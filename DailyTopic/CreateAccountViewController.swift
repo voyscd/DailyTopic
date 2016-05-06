@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class CreateAccountViewController: UIViewController,UITextFieldDelegate {
 
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -38,6 +38,9 @@ class CreateAccountViewController: UIViewController {
         passwordField.layer.cornerRadius = 5
         CreateAccount.layer.cornerRadius = 5
         Cancel.layer.cornerRadius = 5
+        
+        emailTextField.delegate = self
+        passwordField.delegate = self
         
         
     }
@@ -86,6 +89,20 @@ class CreateAccountViewController: UIViewController {
     
     @IBAction func cancelAction(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField!) {    //delegate method
+        
+    }
+    
+    func textFieldShouldEndEditing(textField: UITextField!) -> Bool {  //delegate method
+        return true
+    }
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        
+        return true
     }
     
    

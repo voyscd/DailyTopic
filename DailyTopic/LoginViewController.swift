@@ -49,11 +49,12 @@ class LoginViewController: VideoSplashViewController,UITextFieldDelegate{
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        self.logoutButton.hidden = true
         
-        if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil && CURRENT_USER.authData != nil
-        {
-            self.logoutButton.hidden = false
-        }
+//        if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil && CURRENT_USER.authData != nil
+//        {
+//            self.logoutButton.hidden = false
+//        }
     }
     
     

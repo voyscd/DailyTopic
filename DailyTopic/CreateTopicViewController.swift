@@ -22,13 +22,46 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
     @IBAction func CreateTopicButton(sender: AnyObject) {
         
         
-        let authData = CURRENT_USER.authData.description.componentsSeparatedByString(" ")
         
-        let uid = authData[1]
         
-        var ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
+        if topicTextfield.text != ""
+        {
+            //Save data into the Firebase
+            let authData = CURRENT_USER.authData.description.componentsSeparatedByString(" ")
+            
+            let uid = authData[1]
+            
+            let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
+            
+            let topic = ref.childByAppendingPath(uid + "/Topic")
+            
+            let timestamp = topic.childByAutoId().description
+            
+            topicTextfield.text = ""
+            
         
-        var topic = ref.childByAppendingPath(uid + "/Topic").setValue(topicTextfield.text)
+        }
+        else
+        {
+            let alert = UIAlertController(title: "Please Input a Title",
+                                          message: "Add a picture ",
+                                          preferredStyle: .Alert)
+            
+           
+            
+            let cancelAction = UIAlertAction(title: "Cancel",
+                                             style: .Default) { (action: UIAlertAction) -> Void in
+            }
+            
+          
+  
+         
+            alert.addAction(cancelAction)
+            
+            presentViewController(alert,
+                                  animated: true,
+                                  completion: nil)
+        }
         
         
     }

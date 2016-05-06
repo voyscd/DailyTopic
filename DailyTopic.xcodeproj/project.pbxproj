@@ -159,6 +159,14 @@
 			name = CreateTopic;
 			sourceTree = "<group>";
 		};
+		65D8105F1CDCEF9900AD9DE3 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
 		65ECE79C1CD36A9200FC7F29 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +192,7 @@
 		65ECE7A71CD36A9200FC7F29 /* DailyTopic */ = {
 			isa = PBXGroup;
 			children = (
+				65D8105F1CDCEF9900AD9DE3 /* HomePage */,
 				658842D91CDCCA6B008BB38D /* UserProfile */,
 				6555A35B1CDA399A00E1A3BA /* Login&SingUp */,
 				6588E9311CD48E670090DB88 /* BackgroundVideo */,
@@ -194,7 +203,6 @@
 				65ECE7B41CD36A9300FC7F29 /* LaunchScreen.storyboard */,
 				65ECE7B71CD36A9300FC7F29 /* Info.plist */,
 				65ECE7AF1CD36A9300FC7F29 /* DailyTopic.xcdatamodeld */,
-				65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */,
 				6560D61C1CDA01F30088034C /* SearchViewController.swift */,
 				6560D61E1CDA02240088034C /* FavouriteViewController.swift */,
 			);

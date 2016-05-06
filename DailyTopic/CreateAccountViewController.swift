@@ -70,9 +70,10 @@ class CreateAccountViewController: UIViewController,UITextFieldDelegate {
                             //Save the User Name and Password into the Friebase
                             let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
                         
-                            let userInformation = ["UserEmail": email!, "UserPassword": password!]
+                            let userInformation = ["UserName": userName!,"UserEmail": email!, "UserPassword": password!]
                             
-                            ref.childByAppendingPath(userName!).setValue(userInformation)
+                            //Save the User unique id
+                            ref.childByAppendingPath(authData.uid).setValue(userInformation)
                             
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }else

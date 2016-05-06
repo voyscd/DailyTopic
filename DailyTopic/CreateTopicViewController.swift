@@ -37,17 +37,10 @@ var floatingActionButton: LiquidFloatingActionButton!
         createFloatingButtons()
         
         
+        print( CURRENT_USER.authData.description)
+    
+        var ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
         
-        var ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/web/saving-data/fireblog")
-        
-     
-        var alanisawesome = ["full_name": "Alan Turing", "date_of_birth": "June 23, 1912"]
-        var gracehop = ["full_name": "Grace Hopper", "date_of_birth": "December 9, 1906"]
-        
-        var usersRef = ref.childByAppendingPath("users")
-        
-        var users = ["alanisawesome": alanisawesome, "gracehop": gracehop]
-        usersRef.setValue(users)
         
     }
     

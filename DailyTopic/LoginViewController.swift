@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Firebase
 
 
 
@@ -80,8 +81,15 @@ class LoginViewController: VideoSplashViewController,UITextFieldDelegate{
                 if error == nil{
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid,forKey: "uid")
                     
+                    //Sucessful Login
                     print("Logged In :)")
                     self.logoutButton.hidden = false
+                    
+                   
+                    
+                    
+                    
+                    
                 }
                 else{
                     print(error)

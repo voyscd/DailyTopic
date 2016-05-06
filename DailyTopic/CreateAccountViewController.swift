@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountViewController: UIViewController,UITextFieldDelegate {
 
+    
+    @IBOutlet weak var userNameTextField: UITextField!
     
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -62,6 +65,18 @@ class CreateAccountViewController: UIViewController,UITextFieldDelegate {
                         {
                             NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                             print("Account Created :)")
+                            
+                            //Save the User Name and Password into the Friebase
+                            let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic")
+                            
+                            let userName = self.userNameTextField.text!
+                            let userEmail = self.emailTextField.text!
+                            let userPassword = self.passwordField.text!
+                            
+                            let userInformation = ["UserEmail": userEmail, "UserPassword": userPassword]
+                            
+                            let usersRef = ref.childByAppendingPath(userName).setValue(userInformation)
+                            
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }else
                         {

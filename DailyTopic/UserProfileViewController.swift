@@ -14,6 +14,16 @@ class UserProfileViewController: UIViewController {
     
     @IBOutlet weak var logoutButton: UIButton!
     
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    
+    override func viewDidLoad() {
+         super.viewDidLoad()
+        
+        var ref = Firebase(url: "https://docs-examples.firebaseio.com/web/saving-data/fireblog")
+         
+    }
+    
     
     @IBAction func logoutAction(sender: AnyObject) {
         CURRENT_USER.unauth()

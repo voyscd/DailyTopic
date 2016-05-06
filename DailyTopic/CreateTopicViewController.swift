@@ -13,11 +13,25 @@ import Firebase
 var cells = [LiquidFloatingCell]()  //DataSource
 var imagePicker = UIImagePickerController()
 
+
 class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate{
 
     
     @IBOutlet weak var topicTextfield: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    @IBAction func CreateTopicButton(sender: AnyObject) {
+        
+        
+        let authData = CURRENT_USER.authData.description.componentsSeparatedByString(" ")
+        
+        let uid = authData[1]
+        
+        var ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
+        
+        var topic = ref.childByAppendingPath(uid + "/Topic").setValue(topicTextfield.text)
+        
+        
+    }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
@@ -36,10 +50,7 @@ var floatingActionButton: LiquidFloatingActionButton!
           topicTextfield.delegate = self
         createFloatingButtons()
         
-        
-        print( CURRENT_USER.authData.description)
-    
-        var ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
+      
         
         
     }

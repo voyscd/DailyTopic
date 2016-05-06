@@ -434,7 +434,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-JR-hZl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-JR-hZl">
                                 <rect key="frame" x="0.0" y="66" width="320" height="328"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="181" id="aae-Q0-HQ7"/>
@@ -455,7 +455,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-Jc-wyy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-Jc-wyy">
                                 <rect key="frame" x="94" y="422" width="195" height="65"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -464,6 +464,9 @@
                                 <state key="normal" title="Post Topic">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="CreateTopicButton:" destination="WoU-ma-7Ro" eventType="touchUpInside" id="UE6-cz-pgI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36149612640000001" green="1" blue="0.40403542399999998" alpha="1" colorSpace="calibratedRGB"/>

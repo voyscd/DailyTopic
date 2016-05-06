@@ -50,10 +50,11 @@ class CreateAccountViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func createAccountAction(sender: AnyObject) {
         
+         let userName = self.userNameTextField.text
         let email = self.emailTextField.text
         let  password = self.passwordField.text
         
-        if email != "" && password != ""
+        if email != "" && password != "" && userName != ""
         {
             FIREBASE_REF.createUser(email,password: password,withValueCompletionBlock: {(error,result) -> Void in
             
@@ -67,15 +68,11 @@ class CreateAccountViewController: UIViewController,UITextFieldDelegate {
                             print("Account Created :)")
                             
                             //Save the User Name and Password into the Friebase
-                            let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic")
+                            let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
+                        
+                            let userInformation = ["UserEmail": email!, "UserPassword": password!]
                             
-                            let userName = self.userNameTextField.text!
-                            let userEmail = self.emailTextField.text!
-                            let userPassword = self.passwordField.text!
-                            
-                            let userInformation = ["UserEmail": userEmail, "UserPassword": userPassword]
-                            
-                            let usersRef = ref.childByAppendingPath(userName).setValue(userInformation)
+                            ref.childByAppendingPath(userName!).setValue(userInformation)
                             
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }else

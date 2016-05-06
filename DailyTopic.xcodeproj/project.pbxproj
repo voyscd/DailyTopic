@@ -120,7 +120,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6555A35B1CDA399A00E1A3BA /* Login */ = {
+		6555A35B1CDA399A00E1A3BA /* Login&SingUp */ = {
 			isa = PBXGroup;
 			children = (
 				65A254E61CD44865001D5FEF /* BaseService.swift */,
@@ -128,7 +128,7 @@
 				65A254EC1CD45068001D5FEF /* LoginViewController.swift */,
 				65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */,
 			);
-			name = Login;
+			name = "Login&SingUp";
 			sourceTree = "<group>";
 		};
 		658842D91CDCCA6B008BB38D /* UserProfile */ = {
@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				658842D91CDCCA6B008BB38D /* UserProfile */,
-				6555A35B1CDA399A00E1A3BA /* Login */,
+				6555A35B1CDA399A00E1A3BA /* Login&SingUp */,
 				6588E9311CD48E670090DB88 /* BackgroundVideo */,
 				65CC701C1CDA21550039CF49 /* CreateTopic */,
 				6589A4631CD87DF300B72FFA /* Main.storyboard */,

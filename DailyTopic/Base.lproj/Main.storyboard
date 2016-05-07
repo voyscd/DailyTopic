@@ -345,7 +345,7 @@
         <!--Home-->
         <scene sceneID="je0-Yb-KFX">
             <objects>
-                <viewController id="d5O-P9-sMl" customClass="HomePageViewController" customModule="DailyTopic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d5O-P9-sMl" customClass="HomeViewController" customModule="DailyTopic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kER-VX-1cj"/>
                         <viewControllerLayoutGuide type="bottom" id="zuJ-tg-ERB"/>
@@ -361,6 +361,9 @@
                                     <segment title="Published"/>
                                     <segment title="Nearby"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedAction:" destination="d5O-P9-sMl" eventType="valueChanged" id="EN7-5w-uj7"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="292" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="47K-Rj-b0q">
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
@@ -424,12 +427,19 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="d5O-P9-sMl" id="RFc-fa-i2g"/>
+                                    <outlet property="delegate" destination="d5O-P9-sMl" id="pdq-Ji-uuq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="fSJ-fg-861"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableview" destination="47K-Rj-b0q" id="Lbl-ve-fcJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrW-88-Akw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

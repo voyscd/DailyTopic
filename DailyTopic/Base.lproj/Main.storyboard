@@ -354,8 +354,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-9f-OQf">
+                                <rect key="frame" x="152" y="43" width="156" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="HwO-4I-EQn"/>
+                                    <constraint firstAttribute="width" constant="156" id="nol-2L-Nrr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-QB-2Ak">
+                                <rect key="frame" x="152" y="98" width="156" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="7r5-Ez-Jes"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-Gr-b41">
-                                <rect key="frame" x="108" y="515" width="349" height="30"/>
+                                <rect key="frame" x="20" y="475" width="263" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="LogOut">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -364,23 +383,23 @@
                                     <action selector="logoutAction:" destination="SQ7-bb-bfB" eventType="touchUpInside" id="Su5-lH-swT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbS-9f-OQf">
-                                <rect key="frame" x="251" y="50" width="156" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="K5l-Gr-b41" firstAttribute="leading" secondItem="iE6-8H-5y4" secondAttribute="leadingMargin" constant="75" id="hso-Ij-zJJ"/>
-                            <constraint firstItem="FCC-Mm-b28" firstAttribute="top" secondItem="K5l-Gr-b41" secondAttribute="bottom" constant="8" symbolic="YES" id="uPq-ag-lHo"/>
-                            <constraint firstItem="K5l-Gr-b41" firstAttribute="centerX" secondItem="iE6-8H-5y4" secondAttribute="centerX" id="yWZ-Hi-8Kh"/>
+                            <constraint firstItem="RhZ-QB-2Ak" firstAttribute="top" secondItem="VbS-9f-OQf" secondAttribute="bottom" constant="23" id="Tdp-AS-g4i"/>
+                            <constraint firstItem="VbS-9f-OQf" firstAttribute="top" secondItem="02A-71-ACK" secondAttribute="bottom" constant="23" id="car-Gx-oU6"/>
+                            <constraint firstItem="K5l-Gr-b41" firstAttribute="leading" secondItem="iE6-8H-5y4" secondAttribute="leadingMargin" id="hso-Ij-zJJ"/>
+                            <constraint firstItem="RhZ-QB-2Ak" firstAttribute="leading" secondItem="iE6-8H-5y4" secondAttribute="leadingMargin" constant="132" id="i3T-Iv-aJc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RhZ-QB-2Ak" secondAttribute="trailing" constant="-8" id="t9t-kJ-Qu2"/>
+                            <constraint firstItem="FCC-Mm-b28" firstAttribute="top" secondItem="K5l-Gr-b41" secondAttribute="bottom" constant="14" id="uPq-ag-lHo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VbS-9f-OQf" secondAttribute="trailing" constant="-8" id="wa9-U2-g36"/>
+                            <constraint firstItem="K5l-Gr-b41" firstAttribute="centerX" secondItem="iE6-8H-5y4" secondAttribute="centerX" constant="-8.5" id="yWZ-Hi-8Kh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="9pt-o5-Odj"/>
                     <connections>
                         <outlet property="logoutButton" destination="K5l-Gr-b41" id="k9z-fP-25G"/>
+                        <outlet property="userEmailLaabel" destination="RhZ-QB-2Ak" id="NkH-TN-6Z9"/>
                         <outlet property="userNameLabel" destination="VbS-9f-OQf" id="uoM-g6-Q1y"/>
                     </connections>
                 </viewController>

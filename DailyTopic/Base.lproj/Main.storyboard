@@ -369,7 +369,7 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicCell" rowHeight="292" id="ySg-nC-j1e">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicCell" rowHeight="292" id="ySg-nC-j1e" customClass="TopicCell" customModule="DailyTopic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="292"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ySg-nC-j1e" id="ZE5-QL-Aem">
@@ -378,14 +378,26 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lrv-gD-O4k">
                                                     <rect key="frame" x="214" y="121" width="78" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="78" id="hQG-nY-szZ"/>
                                                     </constraints>
-                                                    <state key="normal" title="Reply"/>
+                                                    <state key="normal" title="Reply">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="ReplyButton:" destination="ySg-nC-j1e" eventType="touchUpInside" id="HlL-n4-wq1"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-rK-6y6">
                                                     <rect key="frame" x="214" y="181" width="78" height="30"/>
-                                                    <state key="normal" title="Save"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Save">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="SaveButton:" destination="ySg-nC-j1e" eventType="touchUpInside" id="o3e-lO-q6x"/>
+                                                    </connections>
                                                 </button>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YO9-FR-GJR">
                                                     <rect key="frame" x="8" y="8" width="304" height="74"/>
@@ -425,6 +437,11 @@
                                                 <constraint firstItem="L4U-uv-ub1" firstAttribute="top" secondItem="YO9-FR-GJR" secondAttribute="bottom" constant="16" id="ypi-Up-B0R"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="TopicMessage" destination="DSE-jM-AUJ" id="11f-ra-cvV"/>
+                                            <outlet property="TopicPicture" destination="L4U-uv-ub1" id="KAe-Qy-82A"/>
+                                            <outlet property="TopicTitle" destination="YO9-FR-GJR" id="eQF-1S-Hr7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

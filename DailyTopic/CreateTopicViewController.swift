@@ -27,18 +27,16 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
         {
             
 
-            let image = imageView.image
-            let imageData = UIImagePNGRepresentation(image!)
-            
-    
+
             let topicTitle = topicTextfield.text!
             
-            let base64String = imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+            if let image = imageView.image{
+                data = UIImageJPEGRepresentation(image, 0.1)!
+            }
             
-         
+            let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
             
-            
-            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String]
+            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret"]
             
           
             
@@ -59,7 +57,7 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             //Save data into the Total Topic of Firebase
            let sameTimestamp = timestamp.description().componentsSeparatedByString("/")[7]
             
-           let topicRef = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics")
+           let topicRef = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret")
             
            topicRef.childByAppendingPath(sameTimestamp).setValue(topicInformation)
             

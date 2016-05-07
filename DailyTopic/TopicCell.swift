@@ -8,6 +8,19 @@
 
 import UIKit
 
-class TopicCell: UIViewController {
+class TopicCell: UITableViewCell {
 
+    @IBOutlet weak var TopicTitle: UITextView!
+    @IBOutlet weak var TopicMessage: UILabel!
+    @IBOutlet weak var TopicPicture: UIImageView!
+    
+    
+    @IBAction func ReplyButton(sender: AnyObject) {
+    }
+    
+    @IBAction func SaveButton(sender: AnyObject) {
+    }
+    
+    
+    
 }

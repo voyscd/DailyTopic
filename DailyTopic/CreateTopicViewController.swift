@@ -31,16 +31,32 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             
             let uid = authData[1]
             
+     
+            
+            
             let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
             
             let topic = ref.childByAppendingPath(uid + "/Topic")
             
-            let timestamp = topic.childByAutoId().setValue(topicTextfield.text )
+            let timestamp = topic.childByAutoId()
+            timestamp.setValue(topicTextfield.text )
             
+
+        
+            //Save data into the Total Topic of Firebase
+           let sameTimestamp = timestamp.description().componentsSeparatedByString("/")[7]
+            
+           let topicRef = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics")
+            
+           topicRef.childByAppendingPath(sameTimestamp).setValue(topicTextfield.text)
+            
+            
+            
+            
+            
+            
+            //Set the Topic Textfield equal Null
             topicTextfield.text = ""
-            
-            ref.observeEventType(.Value , withBlock: { snapshot in print(snapshot.value)},
-                                   withCancelBlock: { error in print(error.description)})
         }
         else
         {

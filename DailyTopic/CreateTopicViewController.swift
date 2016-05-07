@@ -10,6 +10,7 @@ import UIKit
 import LiquidFloatingActionButton
 import Firebase
 
+
 var cells = [LiquidFloatingCell]()  //DataSource
 var imagePicker = UIImagePickerController()
 
@@ -35,6 +36,10 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             }
             
             let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+            
+//            let base64String = convertImageToBase64(imageView.image!)
+            
+            
             
             let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret"]
             
@@ -160,6 +165,13 @@ var floatingActionButton: LiquidFloatingActionButton!
         textField.resignFirstResponder()
         
         return true
+    }
+    
+    func convertImageToBase64(image: UIImage) -> String{
+        var imageData = UIImagePNGRepresentation(image)
+        let base64String = imageData?.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+        
+        return base64String!
     }
 
     

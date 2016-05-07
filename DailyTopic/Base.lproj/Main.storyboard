@@ -540,7 +540,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PWN-JR-hZl">
-                                <rect key="frame" x="0.0" y="66" width="320" height="328"/>
+                                <rect key="frame" x="0.0" y="76" width="320" height="318"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="181" id="aae-Q0-HQ7"/>
                                 </constraints>
@@ -556,15 +556,19 @@
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your Daily Topic..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ome-wP-BqD">
-                                <rect key="frame" x="0.0" y="28" width="320" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="J2Q-5M-H4Z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="bCz-6q-pHN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-Jc-wyy">
                                 <rect key="frame" x="94" y="422" width="195" height="65"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Uya-VR-MiG"/>
+                                    <constraint firstAttribute="height" constant="65" id="GQQ-jF-EYd"/>
                                 </constraints>
                                 <state key="normal" title="Post Topic">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -576,16 +580,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.36149612640000001" green="1" blue="0.40403542399999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="PWN-JR-hZl" firstAttribute="trailing" secondItem="Ome-wP-BqD" secondAttribute="trailing" id="0xa-kf-cOq"/>
-                            <constraint firstItem="PWN-JR-hZl" firstAttribute="top" secondItem="Ome-wP-BqD" secondAttribute="bottom" constant="8" symbolic="YES" id="Bos-aB-q2I"/>
-                            <constraint firstAttribute="trailing" secondItem="PWN-JR-hZl" secondAttribute="trailing" id="FFn-Mn-dSh"/>
-                            <constraint firstItem="PWN-JR-hZl" firstAttribute="leading" secondItem="Ome-wP-BqD" secondAttribute="leading" id="I0j-lh-lWe"/>
-                            <constraint firstItem="Ome-wP-BqD" firstAttribute="top" secondItem="QGS-GR-IrK" secondAttribute="bottom" constant="8" symbolic="YES" id="RvC-td-sav"/>
-                            <constraint firstItem="Ome-wP-BqD" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leading" id="bTz-MB-R99"/>
-                            <constraint firstItem="VGK-Jc-wyy" firstAttribute="top" secondItem="PWN-JR-hZl" secondAttribute="bottom" constant="28" id="f5X-og-40P"/>
-                            <constraint firstItem="3K7-5L-272" firstAttribute="top" secondItem="VGK-Jc-wyy" secondAttribute="bottom" constant="32" id="ffm-G3-ASQ"/>
-                            <constraint firstItem="VGK-Jc-wyy" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leadingMargin" constant="78" id="lCX-Pa-IPK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VGK-Jc-wyy" secondAttribute="trailing" constant="15" id="vKG-mQ-8Dp"/>
+                            <constraint firstItem="Ome-wP-BqD" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leading" id="6sU-U4-ILr"/>
+                            <constraint firstItem="Ome-wP-BqD" firstAttribute="trailing" secondItem="PWN-JR-hZl" secondAttribute="trailing" id="6sx-Od-R9I"/>
+                            <constraint firstItem="VGK-Jc-wyy" firstAttribute="top" secondItem="PWN-JR-hZl" secondAttribute="bottom" constant="28" id="7dE-bl-HEB"/>
+                            <constraint firstItem="3K7-5L-272" firstAttribute="top" secondItem="VGK-Jc-wyy" secondAttribute="bottom" constant="32" id="K7K-kq-jm8"/>
+                            <constraint firstItem="PWN-JR-hZl" firstAttribute="top" secondItem="Ome-wP-BqD" secondAttribute="bottom" constant="14" id="P0C-FS-It3"/>
+                            <constraint firstItem="VGK-Jc-wyy" firstAttribute="leading" secondItem="Bhe-TF-MW5" secondAttribute="leadingMargin" constant="78" id="P5t-gR-6Rc"/>
+                            <constraint firstItem="Ome-wP-BqD" firstAttribute="top" secondItem="QGS-GR-IrK" secondAttribute="bottom" constant="2" id="YBz-Xp-22g"/>
+                            <constraint firstAttribute="trailing" secondItem="Ome-wP-BqD" secondAttribute="trailing" id="dgr-it-gZv"/>
+                            <constraint firstItem="Ome-wP-BqD" firstAttribute="leading" secondItem="PWN-JR-hZl" secondAttribute="leading" id="kfi-B8-ZVC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VGK-Jc-wyy" secondAttribute="trailing" constant="15" id="piQ-A0-le1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create" image="createTopic" id="abC-Z6-CVn"/>

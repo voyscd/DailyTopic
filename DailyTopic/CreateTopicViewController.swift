@@ -19,27 +19,40 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBOutlet weak var topicTextfield: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    var data: NSData = NSData()
+    
+    //When the user click the Create Topic Button ,Title and Picture will upload into the Firebase
     @IBAction func CreateTopicButton(sender: AnyObject) {
-        
-        
-        
-        
-        if topicTextfield.text != ""
+        if topicTextfield.text != "" && imageView.image != nil
         {
+            
+
+            let image = imageView.image
+            let imageData = UIImagePNGRepresentation(image!)
+            
+    
+            let topicTitle = topicTextfield.text!
+            
+            let base64String = imageData!.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+            
+         
+            
+            
+            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String]
+            
+          
+            
             //Save data into the Firebase
             let authData = CURRENT_USER.authData.description.componentsSeparatedByString(" ")
             
             let uid = authData[1]
-            
-     
-            
             
             let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
             
             let topic = ref.childByAppendingPath(uid + "/Topic")
             
             let timestamp = topic.childByAutoId()
-            timestamp.setValue(topicTextfield.text )
+            timestamp.setValue(topicInformation )
             
 
         
@@ -48,15 +61,11 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             
            let topicRef = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics")
             
-           topicRef.childByAppendingPath(sameTimestamp).setValue(topicTextfield.text)
-            
-            
-            
-            
-            
+           topicRef.childByAppendingPath(sameTimestamp).setValue(topicInformation)
             
             //Set the Topic Textfield equal Null
             topicTextfield.text = ""
+            imageView.image = nil
         }
         else
         {

@@ -342,6 +342,35 @@
             </objects>
             <point key="canvasLocation" x="-779" y="-2173"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="NNe-0x-si2">
+            <objects>
+                <tableViewController id="XaV-I4-8Pp" customClass="HomePageViewController" customModule="DailyTopic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="223" sectionHeaderHeight="28" sectionFooterHeight="28" id="BmU-Ye-2Mn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicCell" rowHeight="223" id="Rfi-zC-as5">
+                                <rect key="frame" x="0.0" y="28" width="320" height="223"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rfi-zC-as5" id="gKW-ma-sq9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="222"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XaV-I4-8Pp" id="ww4-qm-HTA"/>
+                            <outlet property="delegate" destination="XaV-I4-8Pp" id="y9U-dY-wYT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" tag="1" title="Home" image="home" id="2Hd-76-w9D"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gz-dz-0MW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3236" y="-713"/>
+        </scene>
         <!--UserProfile-->
         <scene sceneID="AMA-kB-eLx">
             <objects>
@@ -406,40 +435,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJC-kw-gix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2275" y="-694"/>
-        </scene>
-        <!--HomePage-->
-        <scene sceneID="Qni-vw-oqL">
-            <objects>
-                <viewController title="HomePage" id="wSV-qA-Lkr" customClass="HomePageViewController" customModule="DailyTopic" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="rB7-j4-v0j"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dpe-IC-tHE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZA3-1P-cbE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dhK-4t-itV">
-                                <rect key="frame" x="53" y="28" width="230" height="29"/>
-                                <segments>
-                                    <segment title="Secret"/>
-                                    <segment title="Published"/>
-                                    <segment title="Nearby"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="dhK-4t-itV" firstAttribute="leading" secondItem="ZA3-1P-cbE" secondAttribute="leadingMargin" constant="37" id="9ia-Jp-9Gx"/>
-                            <constraint firstItem="dhK-4t-itV" firstAttribute="top" secondItem="rB7-j4-v0j" secondAttribute="bottom" constant="8" symbolic="YES" id="QcO-14-rVx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dhK-4t-itV" secondAttribute="trailing" constant="21" id="TvK-KI-r4i"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="1xb-8D-vFh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xxf-iQ-U0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3388" y="-694"/>
         </scene>
         <!--CreateTopic-->
         <scene sceneID="dUk-TZ-iAS">
@@ -639,7 +634,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wSV-qA-Lkr" kind="relationship" relationship="viewControllers" id="5ZF-0v-AKa"/>
+                        <segue destination="XaV-I4-8Pp" kind="relationship" relationship="viewControllers" id="blu-19-e9s"/>
                         <segue destination="SQ7-bb-bfB" kind="relationship" relationship="viewControllers" id="HdM-TV-Ud7"/>
                         <segue destination="WoU-ma-7Ro" kind="relationship" relationship="viewControllers" id="MnC-xc-vHR"/>
                         <segue destination="hk0-o4-ocx" kind="relationship" relationship="viewControllers" id="3sB-Sb-ghO"/>

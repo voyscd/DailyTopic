@@ -28,7 +28,7 @@ class UserProfileViewController: UIViewController {
         
         let uid = authData[1]
         
-        var ref = Firebase(url:"https://dailytopic-daniel.firebaseio.com/DailyTopic/Users/" + uid)
+        let ref = Firebase(url:"https://dailytopic-daniel.firebaseio.com/DailyTopic/Users/" + uid)
 
         print(uid)
         

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UITableViewController {
 
 
+  
     
-    @IBOutlet weak var segmentTextLabel: UILabel!
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    let items = ["Secret","Published","NearBy"]
+    
+    
 
     
   

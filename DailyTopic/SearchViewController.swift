@@ -8,6 +8,38 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController,UISearchBarDelegate{
 
+    @IBOutlet weak var SearchBar: UISearchBar!
+    
+    
+    override func viewDidLoad() {
+    
+        super.viewDidLoad()
+        SearchBar.delegate = self
+    }
+    
+    
+ 
+    
+    
+    
+    
+    func searchBarDidBeginEditing(textField: UITextField!) {    //delegate method
+        
+    }
+    
+    
+    func searchBarShouldEndEditing(searchBar: UISearchBar) -> Bool {
+        return true
+    }
+    
+ 
+    func searchBarShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    
 }

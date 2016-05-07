@@ -1,5 +1,5 @@
 //
-//  HomePageViewController.swift
+//  TopicInformationTableViewController.swift
 //  DailyTopic
 //
 //  Created by Daniel on 7/05/2016.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+class TopicInformationTableViewController: UITableViewController {
 
 }

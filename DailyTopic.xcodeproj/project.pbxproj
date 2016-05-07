@@ -18,8 +18,9 @@
 		65A254E71CD44865001D5FEF /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254E61CD44865001D5FEF /* BaseService.swift */; };
 		65A254ED1CD45068001D5FEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254EC1CD45068001D5FEF /* LoginViewController.swift */; };
 		65A254EF1CD450CF001D5FEF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */; };
-		65BF76B61CD47CFC00C86D47 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */; };
 		65CC701E1CDA21710039CF49 /* AddPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */; };
+		65E8E5EF1CDDEA7300934554 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8E5EE1CDDEA7300934554 /* HomePageViewController.swift */; };
+		65E8E5F31CDDEEB400934554 /* TopicInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8E5F21CDDEEB400934554 /* TopicInformationTableViewController.swift */; };
 		65ECE7A91CD36A9200FC7F29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */; };
 		65ECE7B11CD36A9300FC7F29 /* DailyTopic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65ECE7AF1CD36A9300FC7F29 /* DailyTopic.xcdatamodeld */; };
 		65ECE7B31CD36A9300FC7F29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ECE7B21CD36A9300FC7F29 /* Assets.xcassets */; };
@@ -65,8 +66,9 @@
 		65A254E61CD44865001D5FEF /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseService.swift; path = ../BaseService.swift; sourceTree = "<group>"; };
 		65A254EC1CD45068001D5FEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPictureViewController.swift; sourceTree = "<group>"; };
+		65E8E5EE1CDDEA7300934554 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		65E8E5F21CDDEEB400934554 /* TopicInformationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicInformationTableViewController.swift; sourceTree = "<group>"; };
 		65ECE7A51CD36A9200FC7F29 /* DailyTopic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyTopic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ECE7A81CD36A9200FC7F29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65ECE7B01CD36A9300FC7F29 /* DailyTopic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyTopic.xcdatamodel; sourceTree = "<group>"; };
@@ -162,9 +164,18 @@
 		65D8105F1CDCEF9900AD9DE3 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				65BF76B51CD47CFC00C86D47 /* HomePageViewController.swift */,
+				65E8E5EE1CDDEA7300934554 /* HomePageViewController.swift */,
+				65E8E5F21CDDEEB400934554 /* TopicInformationTableViewController.swift */,
 			);
 			name = HomePage;
+			sourceTree = "<group>";
+		};
+		65E8E5F41CDDFE4E00934554 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6560D61C1CDA01F30088034C /* SearchViewController.swift */,
+			);
+			name = Search;
 			sourceTree = "<group>";
 		};
 		65ECE79C1CD36A9200FC7F29 = {
@@ -192,6 +203,7 @@
 		65ECE7A71CD36A9200FC7F29 /* DailyTopic */ = {
 			isa = PBXGroup;
 			children = (
+				65E8E5F41CDDFE4E00934554 /* Search */,
 				65D8105F1CDCEF9900AD9DE3 /* HomePage */,
 				658842D91CDCCA6B008BB38D /* UserProfile */,
 				6555A35B1CDA399A00E1A3BA /* Login&SingUp */,
@@ -203,7 +215,6 @@
 				65ECE7B41CD36A9300FC7F29 /* LaunchScreen.storyboard */,
 				65ECE7B71CD36A9300FC7F29 /* Info.plist */,
 				65ECE7AF1CD36A9300FC7F29 /* DailyTopic.xcdatamodeld */,
-				6560D61C1CDA01F30088034C /* SearchViewController.swift */,
 				6560D61E1CDA02240088034C /* FavouriteViewController.swift */,
 			);
 			path = DailyTopic;
@@ -515,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E8E5F31CDDEEB400934554 /* TopicInformationTableViewController.swift in Sources */,
 				65A254EF1CD450CF001D5FEF /* CreateAccountViewController.swift in Sources */,
 				6560D61B1CDA01D20088034C /* UserProfileViewController.swift in Sources */,
 				65FA5A351CD4BF2900F14F41 /* CameraViewController.swift in Sources */,
@@ -523,7 +535,7 @@
 				65CC701E1CDA21710039CF49 /* AddPictureViewController.swift in Sources */,
 				65A254E71CD44865001D5FEF /* BaseService.swift in Sources */,
 				65FACD771CD487A4000CAC6E /* VideoCutter.swift in Sources */,
-				65BF76B61CD47CFC00C86D47 /* HomePageViewController.swift in Sources */,
+				65E8E5EF1CDDEA7300934554 /* HomePageViewController.swift in Sources */,
 				65FACD751CD48756000CAC6E /* VideoSplashViewController.swift in Sources */,
 				6560D61D1CDA01F30088034C /* SearchViewController.swift in Sources */,
 				65ECE7A91CD36A9200FC7F29 /* AppDelegate.swift in Sources */,

@@ -35,11 +35,12 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             
             let topic = ref.childByAppendingPath(uid + "/Topic")
             
-            let timestamp = topic.childByAutoId().description
+            let timestamp = topic.childByAutoId().setValue(topicTextfield.text )
             
             topicTextfield.text = ""
             
-        
+            ref.observeEventType(.Value , withBlock: { snapshot in print(snapshot.value)},
+                                   withCancelBlock: { error in print(error.description)})
         }
         else
         {

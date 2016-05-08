@@ -123,34 +123,12 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             
             print("inner:\(topicsList!.count)")
             
-//           let t:Topic = self.topicsList[indexPath.row] as! Topic
+           let t:Topic = self.topicsList![indexPath.row] as! Topic
         
-            
-            
             if selectedType == "Secret"
             {
-                
-                let firebase = Firebase(url:"https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret")
-                
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-                
-                firebase.observeEventType(.Value, withBlock: { snapshot in
-
-                    
-                    for item in snapshot.children{
-                        let topicItem = item as! FDataSnapshot
-                        
-                        cell.TopicTitle.text = topicItem.value.objectForKey("TopicTitle") as! String
-                        let base64String = topicItem.value.objectForKey("TopicPicture") as! String
-                        
-                        print(cell.TopicTitle.text)
-                        cell.TopicPicture.image = self.convertBase64ToImage(base64String)
-                        
-                    }
-                    
-                })
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-                
+              cell.TopicTitle.text = t.title
+              cell.TopicPicture.image = t.picture
             }
             
             if selectedType == "Published"

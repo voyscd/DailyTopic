@@ -15,11 +15,13 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     var publishedType = "Published"
     var nearbyType = "Nearby"
     var selectedType = "Secret"
-    var topicsList : NSMutableArray
+    var topicsList : NSArray?
+ 
+    
     
     required init?(coder aDecoder: NSCoder)
     {
-        self.topicsList = NSMutableArray()
+        self.topicsList = [Topic]()
         super.init(coder: aDecoder)
     }
     
@@ -33,7 +35,44 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableview.reloadData()
+      
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+          let firebase = Firebase(url:"https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret")
+        
+        
+        firebase.observeEventType(.Value, withBlock: { snapshot in
+            
+            
+            var newItems = [Topic]()
+        
+            for item in snapshot.children{
+                
+                let topicItem = item as! FDataSnapshot
+                
+                
+                let topicTitle  = topicItem.value.objectForKey("TopicTitle") as! String
+                let base64String = topicItem.value.objectForKey("TopicPicture") as! String
+                
+                let topicImage = self.convertBase64ToImage(base64String)
+                
+                let topicType = "Secret"
+                
+                let topic = Topic(newTitle: topicTitle, newType: topicType, newPicture: topicImage)
+                
+               newItems.append(topic)
+            
+            }
+            
+            self.topicsList = newItems
+            self.tableview.reloadData()
+        })
+    
+        
     }
   
     
@@ -42,12 +81,38 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch(section)
-        {
-        case 0: return 3
-        case 1: return 1
-        default: return 0
-        }
+    
+       return self.topicsList!.count
+        
+        print("TopicsList:\(self.topicsList!.count)")
+ 
+    
+       // return 1
+        
+        
+        
+//        if selectedType == "Secret"
+//        {
+//            
+//            let firebase = Firebase(url:"https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret")
+//            
+//              UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+//            
+//            firebase.observeEventType(.Value, withBlock: { (snapshot: FDataSnapshot!) in
+//                
+//                if snapshot.exists(){
+//                    rows = Int(snapshot.childrenCount)
+//                    print("inner:\(rows)")
+//                }else{
+//                    rows = 1
+//                }
+//            })
+//            
+//              UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+//        }
+     
+        
+     
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -56,6 +121,10 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("TopicCell",forIndexPath: indexPath) as! TopicCell
             
+            print("inner:\(topicsList!.count)")
+            
+//           let t:Topic = self.topicsList[indexPath.row] as! Topic
+        
             
             
             if selectedType == "Secret"
@@ -65,25 +134,21 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = true
                 
-                
                 firebase.observeEventType(.Value, withBlock: { snapshot in
-                    
+
                     
                     for item in snapshot.children{
-                        let topic = item as! FDataSnapshot
+                        let topicItem = item as! FDataSnapshot
                         
-                        cell.TopicTitle.text = topic.value.objectForKey("TopicTitle") as! String
-                        let base64String = topic.value.objectForKey("TopicPicture") as! String
+                        cell.TopicTitle.text = topicItem.value.objectForKey("TopicTitle") as! String
+                        let base64String = topicItem.value.objectForKey("TopicPicture") as! String
                         
+                        print(cell.TopicTitle.text)
                         cell.TopicPicture.image = self.convertBase64ToImage(base64String)
-                        
-                        
                         
                     }
                     
                 })
-                
-                
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                 
             }
@@ -123,11 +188,13 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         let decodedData = NSData(base64EncodedString: base64String, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters )
         
-        var decodedImage = UIImage(data: decodedData!)
+        let decodedImage = UIImage(data: decodedData!)
         
         return decodedImage!
     }
     
+   
     
+   
     
 }

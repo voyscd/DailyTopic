@@ -28,6 +28,9 @@ class TopicCell: UITableViewCell {
     
     @IBAction func ReplyButton(sender: AnyObject) {
         
+     
+        
+        
     }
     
     @IBAction func SaveButton(sender: AnyObject) {

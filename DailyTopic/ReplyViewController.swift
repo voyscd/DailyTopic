@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ReplyViewController: UIViewController,UITextViewDelegate{
 
@@ -32,6 +33,14 @@ class ReplyViewController: UIViewController,UITextViewDelegate{
     
     @IBAction func PostRelyButton(sender: AnyObject) {
         
+        let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret/\(TopicUID!)")
+        let topic = ref.childByAppendingPath("Messages")
+        
+        let message = ReplyTitleTextView.text!
+        
+        topic.childByAutoId().setValue(message)
+        
+         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     

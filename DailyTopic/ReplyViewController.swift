@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReplyViewController: UIViewController {
+class ReplyViewController: UIViewController,UITextViewDelegate{
 
     @IBOutlet weak var ReplyTitleLabel: UITextView!
     
@@ -19,4 +19,9 @@ class ReplyViewController: UIViewController {
     
     
     
+    
+    public func textViewShouldEndEditing(textView: UITextView) -> Bool
+    {
+        return true
+    }
 }

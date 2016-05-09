@@ -10,12 +10,14 @@ import UIKit
 
 class Topic: NSObject {
 
+    var id:String?
     var title:String?
     var type:String?
     var picture: UIImage?
     
-    init(newTitle:String,newType:String,newPicture:UIImage)
+    init(newID:String,newTitle:String,newType:String,newPicture:UIImage)
     {
+        id = newID
         title = newTitle
         type = newType
         picture = newPicture

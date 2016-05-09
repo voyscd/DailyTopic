@@ -22,10 +22,11 @@ class TopicCell: UITableViewCell {
     var TopicTitle: String?
     var TopicType: String?
     var TopicP: UIImage?
+    var tapBlock: dispatch_block_t?
     
+    @IBOutlet weak var ReplyButton: UIButton!
     
     @IBAction func ReplyButton(sender: AnyObject) {
-        
         
     }
     

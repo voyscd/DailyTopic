@@ -10,6 +10,11 @@ import UIKit
 
 class ReplyViewController: UIViewController,UITextViewDelegate{
 
+    
+    
+    var TopicUID : String?
+    
+    
     @IBOutlet weak var ReplyTitleLabel: UITextView!
     
     @IBOutlet weak var ReplyPictureImageView: UIImageView!
@@ -17,11 +22,27 @@ class ReplyViewController: UIViewController,UITextViewDelegate{
     @IBOutlet weak var ReplyTitleTextView: UITextView!
     
     
+    @IBAction func BackHomeButton(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+    }
     
+    
+    
+    @IBAction func PostRelyButton(sender: AnyObject) {
+        
+        
+    }
     
     
     public func textViewShouldEndEditing(textView: UITextView) -> Bool
     {
         return true
     }
+    
+    
+    
+    
+    
 }

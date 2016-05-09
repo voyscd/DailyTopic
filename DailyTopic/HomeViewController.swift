@@ -26,18 +26,16 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         super.init(coder: aDecoder)
     }
     
-    @IBOutlet weak var tableview: UITableView!
+    @IBOutlet weak var tableView: UITableView!
 
     
     @IBAction func segmentedAction(sender: UISegmentedControl) {
        selectedType = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)!
-       tableview.reloadData()
+       tableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -63,14 +61,16 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 
                 let topicType = "Secret"
                 
-                let topic = Topic(newTitle: topicTitle, newType: topicType, newPicture: topicImage)
+                let topicID = topicItem.key
+                
+                let topic = Topic(newID: topicID, newTitle: topicTitle, newType: topicType, newPicture: topicImage)
                 
                newItems.append(topic)
             
             }
             
             self.topicsList = newItems
-            self.tableview.reloadData()
+            self.tableView.reloadData()
         })
     
         
@@ -93,14 +93,20 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         {
             let cell = tableView.dequeueReusableCellWithIdentifier("TopicCell",forIndexPath: indexPath) as! TopicCell
             
+          
+            
             print("inner:\(topicsList!.count)")
             
            let t:Topic = self.topicsList![indexPath.row] as! Topic
         
             if selectedType == "Secret"
             {
+            
               cell.TopicTitleView.text = t.title
               cell.TopicPictureImageView.image = t.picture
+              cell.TopicUID = t.id
+              cell.ReplyButton.tag = indexPath.row
+            
             }
             
             if selectedType == "Published"
@@ -131,6 +137,10 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
     }
     
+     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+   
+    }
+    
     
     //Conver images into base64 and keep them into string
     
@@ -141,6 +151,27 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let decodedImage = UIImage(data: decodedData!)
         
         return decodedImage!
+    }
+    
+    //Transmit the value to Reply View
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "ReplySegue"
+        {
+           
+            let  indexPath = self.tableView.indexPathForSelectedRow!.row
+            
+            let controller: ReplyViewController = segue.destinationViewController as! ReplyViewController
+            
+            let replyTopic: Topic = self.topicsList![indexPath] as! Topic
+            
+            controller.TopicUID = replyTopic.id!
+            
+            print(replyTopic.id!)
+            
+        }
+        
     }
     
    

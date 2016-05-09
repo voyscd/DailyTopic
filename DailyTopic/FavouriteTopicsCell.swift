@@ -11,10 +11,14 @@ import Firebase
 
 class FavouriteTopicsCell: UITableViewCell {
 
+    @IBOutlet weak var TopicImage: UIImageView!
     
+    @IBOutlet weak var TopicTitle: UITextView!
     
+    @IBOutlet weak var Messages: UILabel!
     
-    
+    @IBAction func UnsaveButton(sender: AnyObject) {
+    }
     
     
 }

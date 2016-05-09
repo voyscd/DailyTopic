@@ -7,18 +7,45 @@
 //
 
 import UIKit
+import Firebase
+protocol saveTopicDelegate{
+    func saveTopic(topic:Topic)
+}
+
 
 class TopicCell: UITableViewCell {
 
-    @IBOutlet weak var TopicTitle: UITextView!
-    @IBOutlet weak var TopicMessage: UILabel!
-    @IBOutlet weak var TopicPicture: UIImageView!
+    @IBOutlet weak var TopicTitleView: UITextView!
+    @IBOutlet weak var TopicMessageLabel: UILabel!
+    @IBOutlet weak var TopicPictureImageView: UIImageView!
+    var TopicUID: String?
+    var TopicTitle: String?
+    var TopicType: String?
+    var TopicP: UIImage?
     
     
     @IBAction func ReplyButton(sender: AnyObject) {
+        
+        
     }
     
     @IBAction func SaveButton(sender: AnyObject) {
+        
+        //Get Current User ID
+        let authData = CURRENT_USER.authData.description.componentsSeparatedByString(" ")
+        
+        let uid = authData[1]
+        
+        let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
+        
+        let favourteTopic = ref.childByAppendingPath(uid + "/Favourite/" + TopicUID!)
+        
+        
+        
+        
+        
+        
+        
     }
     
     

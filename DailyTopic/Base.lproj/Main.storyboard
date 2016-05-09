@@ -387,6 +387,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="ReplyButton:" destination="ySg-nC-j1e" eventType="touchUpInside" id="HlL-n4-wq1"/>
+                                                        <segue destination="w4x-Ew-JhQ" kind="show" id="ApQ-D2-QyH"/>
                                                     </connections>
                                                 </button>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YO9-FR-GJR">
@@ -418,6 +419,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="SaveButton:" destination="ySg-nC-j1e" eventType="touchUpInside" id="o3e-lO-q6x"/>
+                                                        <segue destination="8Rh-gt-mlm" kind="presentation" id="lHf-7e-91b"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -439,9 +441,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="TopicMessage" destination="DSE-jM-AUJ" id="11f-ra-cvV"/>
-                                            <outlet property="TopicPicture" destination="L4U-uv-ub1" id="KAe-Qy-82A"/>
-                                            <outlet property="TopicTitle" destination="YO9-FR-GJR" id="eQF-1S-Hr7"/>
+                                            <outlet property="TopicMessageLabel" destination="DSE-jM-AUJ" id="qkb-HS-Ast"/>
+                                            <outlet property="TopicPictureImageView" destination="L4U-uv-ub1" id="gxK-V6-wdB"/>
+                                            <outlet property="TopicTitleView" destination="YO9-FR-GJR" id="V2q-fc-Fg8"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoTopicCell" rowHeight="77" id="aq1-dV-LaU" customClass="NoTopicCell" customModule="DailyTopic" customModuleProvider="target">
@@ -486,6 +488,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrW-88-Akw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2813" y="-698"/>
+        </scene>
+        <!--Reply View Controller-->
+        <scene sceneID="seI-dZ-65A">
+            <objects>
+                <viewController id="w4x-Ew-JhQ" customClass="ReplyViewController" customModule="DailyTopic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s5X-E9-V3E"/>
+                        <viewControllerLayoutGuide type="bottom" id="08y-UI-8J6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a6D-cP-HA6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EEk-1w-H6f">
+                                <rect key="frame" x="20" y="20" width="280" height="89"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="kQ2-Hy-c5k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-5u-NzK">
+                                <rect key="frame" x="20" y="134" width="280" height="128"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Leave Message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-XC-DHW">
+                                <rect key="frame" x="20" y="281" width="280" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="H24-aA-4Mc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.82049474568038172" blue="0.63241372223583392" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EEk-1w-H6f" firstAttribute="leading" secondItem="a6D-cP-HA6" secondAttribute="leadingMargin" constant="4" id="9pq-Sn-cl4"/>
+                            <constraint firstItem="EEk-1w-H6f" firstAttribute="centerX" secondItem="a6D-cP-HA6" secondAttribute="centerX" id="Oj2-cU-ZJr"/>
+                            <constraint firstItem="K7i-5u-NzK" firstAttribute="leading" secondItem="Qoo-XC-DHW" secondAttribute="leading" id="Qe5-8v-i3F"/>
+                            <constraint firstItem="EEk-1w-H6f" firstAttribute="trailing" secondItem="K7i-5u-NzK" secondAttribute="trailing" id="RVC-Q7-2aI"/>
+                            <constraint firstItem="EEk-1w-H6f" firstAttribute="leading" secondItem="K7i-5u-NzK" secondAttribute="leading" id="TBv-TX-5am"/>
+                            <constraint firstItem="08y-UI-8J6" firstAttribute="top" secondItem="Qoo-XC-DHW" secondAttribute="bottom" constant="146" id="Uon-Gx-rIe"/>
+                            <constraint firstItem="K7i-5u-NzK" firstAttribute="trailing" secondItem="Qoo-XC-DHW" secondAttribute="trailing" id="Yea-ao-ULS"/>
+                            <constraint firstItem="Qoo-XC-DHW" firstAttribute="top" secondItem="K7i-5u-NzK" secondAttribute="bottom" constant="19" id="a21-CO-Eod"/>
+                            <constraint firstItem="EEk-1w-H6f" firstAttribute="top" secondItem="s5X-E9-V3E" secondAttribute="bottom" id="jy6-fl-8qm"/>
+                            <constraint firstItem="K7i-5u-NzK" firstAttribute="top" secondItem="EEk-1w-H6f" secondAttribute="bottom" constant="25" id="zvE-0Y-XZV"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ReplyPictureImageView" destination="K7i-5u-NzK" id="UFV-pK-pce"/>
+                        <outlet property="ReplyTitleLabel" destination="EEk-1w-H6f" id="yis-ec-hXf"/>
+                        <outlet property="ReplyTitleTextView" destination="Qoo-XC-DHW" id="aS1-44-RTC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLE-GR-Aco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2813" y="94"/>
         </scene>
         <!--UserProfile-->
         <scene sceneID="AMA-kB-eLx">
@@ -755,7 +816,7 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavouriteTopicsCell" rowHeight="160" id="SF1-Jl-Jd7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavouriteTopicsCell" rowHeight="160" id="SF1-Jl-Jd7" customClass="FavouriteTopicsCell" customModule="DailyTopic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SF1-Jl-Jd7" id="772-8Z-Rtn">
@@ -786,7 +847,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="55" id="Y0r-dD-Bw6"/>
                                                     </constraints>
-                                                    <state key="normal" title="Save"/>
+                                                    <state key="normal" title="Unsave"/>
+                                                    <connections>
+                                                        <action selector="UnsaveButton:" destination="SF1-Jl-Jd7" eventType="touchUpInside" id="QLM-gL-Gwg"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-3A-26p">
                                                     <rect key="frame" x="23" y="125" width="80" height="21"/>
@@ -812,6 +876,11 @@
                                                 <constraint firstItem="K3O-HM-rFT" firstAttribute="leading" secondItem="3PY-1T-E27" secondAttribute="trailing" constant="8" symbolic="YES" id="uak-XD-cnp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Messages" destination="5vi-3A-26p" id="i0v-6F-A0t"/>
+                                            <outlet property="TopicImage" destination="3PY-1T-E27" id="WSu-8i-Htz"/>
+                                            <outlet property="TopicTitle" destination="K3O-HM-rFT" id="GhO-VJ-Ftr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -824,6 +893,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="0P6-K8-OYT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="26A-1e-6TM" id="CeB-D5-DTc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJa-Dw-vl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -858,4 +930,7 @@
         <image name="home" width="72" height="72"/>
         <image name="profile" width="72" height="72"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lHf-7e-91b"/>
+    </inferredMetricsTieBreakers>
 </document>

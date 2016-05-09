@@ -27,8 +27,6 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
         if topicTextfield.text != "" && imageView.image != nil
         {
             
-
-
             let topicTitle = topicTextfield.text!
             
             if let image = imageView.image{
@@ -36,26 +34,18 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             }
             
             let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
-            
-//            let base64String = convertImageToBase64(imageView.image!)
-            
-            
-            
+        
             let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret"]
             
           
             
             //Save data into the Firebase
             let authData = CURRENT_USER.authData.description.componentsSeparatedByString(" ")
-            
             let uid = authData[1]
-            
             let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
-            
             let topic = ref.childByAppendingPath(uid + "/Topic")
-            
             let timestamp = topic.childByAutoId()
-            timestamp.setValue(topicInformation )
+            timestamp.setValue(topicInformation)
             
 
         

@@ -19,6 +19,7 @@
 		65A254ED1CD45068001D5FEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254EC1CD45068001D5FEF /* LoginViewController.swift */; };
 		65A254EF1CD450CF001D5FEF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */; };
 		65C4A0491CDF3E1200AA610C /* FavouriteTopicsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4A0481CDF3E1200AA610C /* FavouriteTopicsCell.swift */; };
+		65C4A04C1CE07C5900AA610C /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4A04B1CE07C5900AA610C /* ReplyViewController.swift */; };
 		65CC701E1CDA21710039CF49 /* AddPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */; };
 		65E8E5F61CDE061C00934554 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8E5F51CDE061C00934554 /* HomeViewController.swift */; };
 		65E8E5FA1CDE1B3D00934554 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E8E5F91CDE1B3D00934554 /* TopicCell.swift */; };
@@ -70,6 +71,7 @@
 		65A254EC1CD45068001D5FEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		65A254EE1CD450CF001D5FEF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		65C4A0481CDF3E1200AA610C /* FavouriteTopicsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteTopicsCell.swift; sourceTree = "<group>"; };
+		65C4A04B1CE07C5900AA610C /* ReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
 		65CC701D1CDA21710039CF49 /* AddPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPictureViewController.swift; sourceTree = "<group>"; };
 		65E8E5F51CDE061C00934554 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		65E8E5F91CDE1B3D00934554 /* TopicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,15 @@
 			name = Favourite;
 			sourceTree = "<group>";
 		};
+		65C4A04A1CE07C1400AA610C /* TopicCell */ = {
+			isa = PBXGroup;
+			children = (
+				65E8E5FB1CDE3A2800934554 /* Topic.swift */,
+				65E8E5F91CDE1B3D00934554 /* TopicCell.swift */,
+			);
+			name = TopicCell;
+			sourceTree = "<group>";
+		};
 		65CC701C1CDA21550039CF49 /* CreateTopic */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,10 +190,10 @@
 		65D8105F1CDCEF9900AD9DE3 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				65C4A04A1CE07C1400AA610C /* TopicCell */,
 				65E8E5F51CDE061C00934554 /* HomeViewController.swift */,
-				65E8E5F91CDE1B3D00934554 /* TopicCell.swift */,
-				65E8E5FB1CDE3A2800934554 /* Topic.swift */,
 				65E8E5FD1CDE4BD300934554 /* NoTopicCell.swift */,
+				65C4A04B1CE07C5900AA610C /* ReplyViewController.swift */,
 			);
 			name = HomePage;
 			sourceTree = "<group>";
@@ -554,6 +565,7 @@
 				65E8E5FE1CDE4BD300934554 /* NoTopicCell.swift in Sources */,
 				65FACD771CD487A4000CAC6E /* VideoCutter.swift in Sources */,
 				65E8E5FA1CDE1B3D00934554 /* TopicCell.swift in Sources */,
+				65C4A04C1CE07C5900AA610C /* ReplyViewController.swift in Sources */,
 				65FACD751CD48756000CAC6E /* VideoSplashViewController.swift in Sources */,
 				6560D61D1CDA01F30088034C /* SearchViewController.swift in Sources */,
 				65ECE7A91CD36A9200FC7F29 /* AppDelegate.swift in Sources */,

@@ -9,13 +9,14 @@
 import UIKit
 import Firebase
 
-class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,saveTopicDelegate{
 
     var secretType = "Secret"
     var publishedType = "Published"
     var nearbyType = "Nearby"
     var selectedType = "Secret"
     var topicsList : NSArray?
+    var favouriteTopicsList: NSArray?
  
     
     
@@ -83,35 +84,6 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
        return self.topicsList!.count
-        
-        print("TopicsList:\(self.topicsList!.count)")
- 
-    
-       // return 1
-        
-        
-        
-//        if selectedType == "Secret"
-//        {
-//            
-//            let firebase = Firebase(url:"https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret")
-//            
-//              UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-//            
-//            firebase.observeEventType(.Value, withBlock: { (snapshot: FDataSnapshot!) in
-//                
-//                if snapshot.exists(){
-//                    rows = Int(snapshot.childrenCount)
-//                    print("inner:\(rows)")
-//                }else{
-//                    rows = 1
-//                }
-//            })
-//            
-//              UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-//        }
-     
-        
      
     }
     
@@ -127,14 +99,14 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
             if selectedType == "Secret"
             {
-              cell.TopicTitle.text = t.title
-              cell.TopicPicture.image = t.picture
+              cell.TopicTitleView.text = t.title
+              cell.TopicPictureImageView.image = t.picture
             }
             
             if selectedType == "Published"
             {
                 
-                cell.TopicTitle.text = "published"
+                cell.TopicTitleView.text = "published"
                 cell.imageView!.image = nil
                 
             }
@@ -142,7 +114,7 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             if selectedType == "Nearby"
             {
                 
-                cell.TopicTitle.text = "nearby"
+                cell.TopicTitleView.text = "nearby"
                 cell.imageView!.image = nil
                 
             }
@@ -172,6 +144,12 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
    
+    //Save Topic Delegate
+    func saveTopic(topic:Topic){
+        
+        
+        
+    }
     
    
     

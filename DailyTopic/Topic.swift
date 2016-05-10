@@ -14,13 +14,16 @@ class Topic: NSObject {
     var title:String?
     var type:String?
     var picture: UIImage?
+    var message: Int?
     
-    init(newID:String,newTitle:String,newType:String,newPicture:UIImage)
+    init(newID:String,newTitle:String,newType:String,newPicture:UIImage,newMessage:Int)
     {
         id = newID
         title = newTitle
         type = newType
         picture = newPicture
+        message = newMessage
+        
     }
     
 }

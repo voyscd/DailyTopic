@@ -17,6 +17,20 @@ class SearchViewController: UIViewController,UISearchBarDelegate{
     
         super.viewDidLoad()
         SearchBar.delegate = self
+        self.SearchBar.endEditing(true)
+        
+        for subView in self.SearchBar.subviews
+        {
+            for subsubView in subView.subviews
+            {
+                if let textField = subsubView as? UITextField
+                {
+                    textField.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("Search Your Interesting Topics", comment: ""),attributes:[NSForegroundColorAttributeName: UIColor.redColor()])
+                    
+                    textField.textColor = UIColor.redColor()
+                }
+            }
+        }
     }
     
     

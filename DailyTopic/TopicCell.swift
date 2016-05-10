@@ -23,13 +23,13 @@ class TopicCell: UITableViewCell {
     var TopicType: String?
     var TopicP: UIImage?
     var tapBlock: dispatch_block_t?
+    var SaveTopicUID: String?
     
     @IBOutlet weak var ReplyButton: UIButton!
     
     @IBAction func ReplyButton(sender: AnyObject) {
         
-     
-        
+    
         
     }
     
@@ -42,10 +42,9 @@ class TopicCell: UITableViewCell {
         
         let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/Users")
         
-        let favourteTopic = ref.childByAppendingPath(uid + "/Favourite/" + TopicUID!)
+        let SaveTopicRef = ref.childByAppendingPath("FollowTopic")
         
-        
-        
+//        SaveTopicRef.childByAutoId().setValue(SaveTopicUID!)
         
         
         

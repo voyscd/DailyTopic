@@ -35,7 +35,7 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             
             let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
         
-            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret"]
+            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret","TopicMessage" : 0]
             
           
             
@@ -101,6 +101,9 @@ var floatingActionButton: LiquidFloatingActionButton!
          imagePicker.delegate = self
           topicTextfield.delegate = self
         createFloatingButtons()
+        topicTextfield.attributedPlaceholder = NSAttributedString(string: NSLocalizedString("Input Your Daily Topic ...", comment: ""),attributes: [NSForegroundColorAttributeName: UIColor.redColor()])
+        
+        topicTextfield.textColor = UIColor.redColor()
         
       
         

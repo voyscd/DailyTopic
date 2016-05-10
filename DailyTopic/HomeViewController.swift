@@ -61,9 +61,11 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 
                 let topicType = "Secret"
                 
+                let topicMessage = 0
+                
                 let topicID = topicItem.key
                 
-                let topic = Topic(newID: topicID, newTitle: topicTitle, newType: topicType, newPicture: topicImage)
+                let topic = Topic(newID: topicID, newTitle: topicTitle, newType: topicType, newPicture: topicImage,newMessage: 0 )
                 
                newItems.append(topic)
             
@@ -105,7 +107,6 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
               cell.TopicTitleView.text = t.title
               cell.TopicPictureImageView.image = t.picture
               cell.TopicUID = t.id
-              cell.ReplyButton.tag = indexPath.row
             
             }
             
@@ -167,10 +168,28 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             let replyTopic: Topic = self.topicsList![indexPath] as! Topic
             
             controller.TopicUID = replyTopic.id!
-            
-            print(replyTopic.id!)
+            controller.TopicMessageNumber = replyTopic.message!
+         
+        
             
         }
+        
+    
+        
+        if segue.identifier == "FollowTopicsSegue"
+        {
+            
+            let  indexPath = self.tableView.indexPathForSelectedRow!.row
+            
+            
+            
+            let followTopic: Topic = self.topicsList![indexPath] as! Topic
+            
+            
+      
+        }
+        
+      
         
     }
     

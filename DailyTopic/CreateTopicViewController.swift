@@ -35,7 +35,7 @@ class CreateTopicViewController: UIViewController,UIImagePickerControllerDelegat
             
             let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
         
-            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret","TopicMessage" : 0]
+            let topicInformation: NSDictionary = ["TopicTitle" : topicTitle,"TopicPicture" : base64String,"TopicType" : "Secret","MessagesCount" : 0]
             
           
             

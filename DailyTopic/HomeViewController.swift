@@ -61,11 +61,11 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 
                 let topicType = "Secret"
                 
-                let topicMessage = 0
+                let topicMessageCount = topicItem.value.objectForKey("MessagesCount") as! Int
                 
                 let topicID = topicItem.key
                 
-                let topic = Topic(newID: topicID, newTitle: topicTitle, newType: topicType, newPicture: topicImage,newMessage: 0 )
+                let topic = Topic(newID: topicID, newTitle: topicTitle, newType: topicType, newPicture: topicImage,newMessageCount: topicMessageCount  )
                 
                newItems.append(topic)
             
@@ -106,6 +106,7 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             
               cell.TopicTitleView.text = t.title
               cell.TopicPictureImageView.image = t.picture
+                
               cell.TopicUID = t.id
             
             }
@@ -169,8 +170,6 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
             
             controller.TopicUID = replyTopic.id!
             controller.TopicMessageNumber = replyTopic.message!
-         
-        
             
         }
         

@@ -35,15 +35,23 @@ class ReplyViewController: UIViewController,UITextViewDelegate{
     @IBAction func PostRelyButton(sender: AnyObject) {
         
         let ref = Firebase(url: "https://dailytopic-daniel.firebaseio.com/DailyTopic/TotalTopics/Secret/\(TopicUID!)")
-        let topic = ref.childByAppendingPath("Messages")
+        
+        //Save the Topic Message Comment
+        let topic = ref.childByAppendingPath("MessagesComment")
         
         let message = ReplyMessageTextView.text!
         
+        print("Message:\(message)")
+        
         topic.childByAutoId().setValue(message)
         
-        let AddMessage = TopicMessageNumber! + 1
+        //Save the Topic Message Count
+        let MessageCount = TopicMessageNumber! + 1
+        print(TopicMessageNumber!)
         
-        ref.childByAppendingPath("Messages").setValue(AddMessage)
+        ref.childByAppendingPath("MessagesCount").setValue(MessageCount)
+        
+        
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
